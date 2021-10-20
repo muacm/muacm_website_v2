@@ -1,0 +1,79 @@
+/* links */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
+/* body */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.btn-discord a button{
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+.heading{
+    font-size: 70px;
+}
+/* content */
+#about-mu{
+    margin: 0px 30px;
+}
+#about-acm{
+    display: flex;
+    margin-top: 10px;
+}
+#about-acm div{
+    margin: 0px 50px;
+}
+#about-acm div p{
+    width: 50vw;
+}
+.middle-content{
+    display: flex;
+    margin: 10px 20px;
+}
+.middle-content div{
+    margin: 10px 50px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #8ed1f8;
+}
+/* Upcoming Events */
+.event-card{
+    padding: 10px 3vw;
+    width: 50vw;
+    background-color: #e77e41;
+    border-radius: 20px;
+    margin: 10px auto;
+    background-image: linear-gradient(to top, aqua, #3578f5);
+}
+.event-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+/* Media Queries */
+@media only screen and (max-width: 1040px) {
+    #about-acm{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    #about-acm div{
+        margin: 0px auto;
+    }
+    .middle-content{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .about-acm-youtube iframe{
+        width: 60vw;
+    }    
+
+  }
