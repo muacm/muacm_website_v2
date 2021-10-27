@@ -1,0 +1,235 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  /* width: 100%; */
+  margin: 0;
+  /* font-weight: 900; */
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background: #0f0c29;  
+background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);
+
+}
+
+/* HOME SECTION */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 200px;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+
+  /* background: #0f0c29;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29); */ 
+}
+
+#home::before {
+  content: "";
+  /* background: url(../img/bg/home-bg6.jpg) no-repeat center center/cover; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BUTTON */
+
+div[class*="box"] {
+  height: 33.33%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .box-2 { background-color: #3C3C3C; } */
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-two {
+  color: #fff;
+  transition: all 0.8s;
+  position: relative;
+}
+
+.btn-two a {
+  color: white;
+}
+
+.btn-two span {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.btn-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* *****ABOUT***** */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 120px;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
+}
+
+#about h2 {
+  font-family: "Krona One", sans-serif;
+  color: white;
+  justify-content: center;
+  font-weight: 900;
+  display: flex;
+}
+
+#about p {
+  font-family: "Montserrat", sans-serif;
+  padding: 40px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+#about-acm{
+  display: flex;
+  margin-top: 10px;
+}
+#about-acm div p{
+  width: 50vw;
+}
+.about-acm-youtube iframe{
+  border-radius: 15px;
+} 
+
+/* *****EVENTS***** */
+
+#events {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 120px;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: #2b4162;
+background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
+
+}
+
+#events h2 {
+  font-family: "Krona One", sans-serif;
+  color: white;
+  justify-content: center;
+  font-weight: 400;
+  display: flex;
+}
+
+#events p {
+  font-family: "Montserrat", sans-serif;
+  padding: 40px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.container .card{
+  position: relative;
+  width: 380px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter:blur(4px);
+}
+
+.container .card .content{
+  padding: 20px;
+  text-align: center;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+h3{
+  color:white;
+  font-family: "Krona One", sans-serif;
+}
+
+

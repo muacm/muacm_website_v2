@@ -1,0 +1,72 @@
+/* NAVIGATION BAR */
+#navbar {
+
+    display: flex;
+    align-items: center;
+  }
+  
+  /* NAVIGATION BAR : LOGO & IMAGE */
+  #logo {
+    margin: 10px 30px;
+  }
+  
+  #logo img {
+    height: 75px;
+    margin: 10px 25px;
+  }
+  
+  /* NAVIGATION BAR : LIST STYLING */
+  #navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    /* opacity: 0.9; */
+  }
+  
+  #navbar ul {
+    display: flex;
+  }
+  
+  /* #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 280%;
+    z-index: -1;
+    opacity: 0.9;
+  } */
+  
+  #navbar ul li {
+    list-style: none;
+    font-size: 0.9rem;
+  }
+  
+  #navbar ul li a {
+    position: relative;
+    font-family: "Krona One", sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+    display: block;
+    padding: 15px 40px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    left: 50%;
+    height: 2px;
+    background: rgb(255, 24, 112);
+    transition: 0.3s ease-out;
+  }
+  
+  #navbar ul li a:hover::after {
+    left: 0;
+    width: 100%;
+  }
