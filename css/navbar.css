@@ -21,7 +21,15 @@
     top: 0px;
     width: 100%;
     background-color: black;
+    justify-content: space-between;
+    /* gap: 2.5em; */
     /* opacity: 0.9; */
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+/* border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   }
   
   #navbar ul {
@@ -42,7 +50,7 @@
   
   #navbar ul li {
     list-style: none;
-    font-size: 0.9rem;
+    font-size: 1em;
   }
   
   #navbar ul li a {
@@ -51,7 +59,7 @@
     color: white;
     letter-spacing: 1.5px;
     display: block;
-    padding: 15px 40px;
+    padding: 15px;
     text-decoration: none;
   }
   

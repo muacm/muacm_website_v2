@@ -14,8 +14,11 @@ body {
   /* font-weight: 900; */
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background: #0f0c29;  
-background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  
+
+
 
 }
 
@@ -182,7 +185,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   color: white;
   justify-content: center;
   font-weight: 400;
-  display: flex;
+  /* display: flex; */
 }
 
 #events p {
@@ -194,40 +197,37 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
 }
 
 .container{
-  display: flex;
-  position: relative;
-  z-index: 1;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
 }
 
 .container .card{
-  position: relative;
+  /* position: relative; */
   width: 380px;
-  height: 400px;
+  /* height: 400px; */
   margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   border-top: 2px solid rgba(255, 255, 255, 0.1);
   border-left: 2px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter:blur(4px);
+  /* backdrop-filter:blur(4px); */
 }
 
 .container .card .content{
-  padding: 20px;
+  /* padding: 10px; */
   text-align: center;
   opacity: 1;
   transition: 0.3s;
 }
 
-h3{
+.card > .content > h3{
+  margin-top: 2.5em;
   color:white;
   font-family: "Krona One", sans-serif;
 }
