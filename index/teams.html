@@ -25,12 +25,15 @@
   </head>
 <body>
     <nav id="navbar">
-        <div id="logo">
-          <a href="#home">
-            <img src="/img/logos/logo.png" alt="MUACM." />
-          </a>
-        </div>
-        <ul>
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <img src="/img/bg/bar.png" alt="">
+      </span>
+    <div id="logo">
+      <a href="#home">
+        <img src="/img/logos/logo.png" alt="MUACM." />
+      </a>
+    </div>
+    <ul class="main-nav" id="js-menu">
           <li class="item"><a href="./index.html#about">ABOUT</a></li>
           <li class="item"><a href="./index.html#events">EVENTS</a></li>
           <li class="item"><a href="#">TEAM</a></li>
@@ -559,4 +562,13 @@
     </div>   
       
 </body>
+<script>
+  let mainNav = document.getElementById('js-menu');
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+
+  navBarToggle.addEventListener('click', function () {
+      
+      mainNav.classList.toggle('active');
+  });
+</script>
 </html>

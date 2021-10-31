@@ -28,13 +28,16 @@
   <body>
     <!-- <div id="navbar"></div> -->
     <nav id="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+          <img src="/img/bg/bar.png" alt="">
+      </span>
       <div id="logo">
         <a href="#home">
           <img src="/img/logos/logo.png" alt="MUACM." />
         </a>
       </div>
-      <ul>
-        <li class="item"><a href="#about">ABOUT</a></li>
+      <ul class="main-nav" id="js-menu">
+        <li class="item"><a class="nav-links" href="#about">ABOUT</a></li>
         <li class="item"><a href="#events">EVENTS</a></li>
         <li class="item"><a href="/index/teams.html">TEAM</a></li>
         <li class="item"><a href="/index/blogs.html">BLOG</a></li>
@@ -181,12 +184,9 @@
               UPCOMING - October 30, 2021
               <br /><br />
             </p>
-            <button
-              class="btn-event"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Register</a>
+            </div>
           </div>
         </div>
 
@@ -203,12 +203,9 @@
               UPCOMING - October 30, 2021
               <br /><br />
             </p>
-            <button
-              class="btn-event"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Done</a>
+            </div>
           </div>
         </div>
 
@@ -225,12 +222,9 @@
               UPCOMING - October 30, 2021
               <br /><br />
             </p>
-            <button
-              class="btn-event"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Done</a>
+            </div>
           </div>
         </div>
 
@@ -247,12 +241,9 @@
               UPCOMING - October 30, 2021
               <br /><br />
             </p>
-            <button
-              class="btn-event"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Done</a>
+            </div>
           </div>
         </div>
 
@@ -269,12 +260,9 @@
               UPCOMING - October 30, 2021
               <br /><br />
             </p>
-            <button
-              class="btn-event"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Done</a>
+            </div>
           </div>
         </div>
         
@@ -287,16 +275,13 @@
               consequuntur repellendus earum corrupti nam esse, quaerat enim
               sunt deserunt dolorem perferendis dolore laudantium? Distinctio
               reiciendis repudiandae id porro, aspernatur molestias.
-              
               <br /><br />
               UPCOMING - October 30, 2021
+              <br /><br />
             </p>
-            <button
-              class="btn-event"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Done</a>
+            </div>
           </div>
         </div>
 
@@ -317,6 +302,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+            
+            mainNav.classList.toggle('active');
+        });
+    </script>
     <!-- <script src="/js/script.js"></script> -->
   </body>
 </html>

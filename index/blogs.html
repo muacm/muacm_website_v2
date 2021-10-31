@@ -28,12 +28,15 @@
   <body>
     <!-- <div id="navbar"></div> -->
     <nav id="navbar">
-      <div id="logo">
-        <a href="#home">
-          <img src="/img/logos/logo.png" alt="MUACM." />
-        </a>
-      </div>
-      <ul>
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <img src="/img/bg/bar.png" alt="">
+      </span>
+    <div id="logo">
+      <a href="#home">
+        <img src="/img/logos/logo.png" alt="MUACM." />
+      </a>
+    </div>
+    <ul class="main-nav" id="js-menu">
         <li class="item"><a href="./index.html#about">ABOUT</a></li>
         <li class="item"><a href="./index.html#events">EVENTS</a></li>
         <li class="item"><a href="/index/teams.html">TEAM</a></li>
@@ -51,12 +54,9 @@
             <div class="imgdiv">
               <img src="/img/bg/blog1.jpeg" alt="" />
             </div>
-            <button
-              class="btn"
-              href="https://medium.com/muacm/5-shortcut-commands-on-windows-that-can-increase-your-productivity-124c9e49c17b"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/5-shortcut-commands-on-windows-that-can-increase-your-productivity-124c9e49c17b">Read Blog</a>
+            </div>
           </div>
         </div>
 
@@ -66,12 +66,9 @@
             <div class="imgdiv">
               <img src="/img/bg/blog2.jpeg" alt="" />
             </div>
-            <button
-              class="btn"
-              href="https://medium.com/muacm/how-bitcoin-runs-on-a-blockchain-and-how-the-transactions-work-71175bff9f35"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/5-shortcut-commands-on-windows-that-can-increase-your-productivity-124c9e49c17b">Read Blog</a>
+            </div>
           </div>
         </div>
 
@@ -81,12 +78,9 @@
             <div class="imgdiv">
               <img src="/img/bg/blog3.jpeg" alt="" />
             </div>
-            <button
-              class="btn"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Read Blog</a>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -95,12 +89,9 @@
             <div class="imgdiv">
               <img src="/img/bg/blog1.jpeg" alt="" />
             </div>
-            <button
-              class="btn"
-              href="https://medium.com/muacm/5-shortcut-commands-on-windows-that-can-increase-your-productivity-124c9e49c17b"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/5-shortcut-commands-on-windows-that-can-increase-your-productivity-124c9e49c17b">Read Blog</a>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -109,12 +100,9 @@
             <div class="imgdiv">
               <img src="/img/bg/blog2.jpeg" alt="" />
             </div>
-            <button
-              class="btn"
-              href="https://medium.com/muacm/how-bitcoin-runs-on-a-blockchain-and-how-the-transactions-work-71175bff9f35"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/how-bitcoin-runs-on-a-blockchain-and-how-the-transactions-work-71175bff9f35">Read Blog</a>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -123,12 +111,9 @@
             <div class="imgdiv">
               <img src="/img/bg/blog3.jpeg" alt="" />
             </div>
-            <button
-              class="btn"
-              href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a"
-            >
-              Read Blog
-            </button>
+            <div class="btn-div">
+              <a class="btn-event" href="https://medium.com/muacm/what-is-cloud-computing-a2117d18b30a">Read Blog</a>
+            </div>
           </div>
         </div>
       </div>
@@ -150,4 +135,13 @@
     ></script>
     <!-- <script src="/js/script.js"></script> -->
   </body>
+  <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+
+    navBarToggle.addEventListener('click', function () {
+        
+        mainNav.classList.toggle('active');
+    });
+</script>
 </html>

@@ -1,58 +1,30 @@
-/* NAVIGATION BAR */
-#navbar {
-
-    display: flex;
-    align-items: center;
-  }
-  
+/* NAVIGATION BAR
   /* NAVIGATION BAR : LOGO & IMAGE */
   #logo {
-    margin: 10px 30px;
+    margin: 0px 30px;
   }
   
   #logo img {
     height: 75px;
     margin: 10px 25px;
   }
-  
-  /* NAVIGATION BAR : LIST STYLING */
+
+
   #navbar {
     position: fixed;
     top: 0px;
     width: 100%;
     background-color: black;
     justify-content: space-between;
-    /* gap: 2.5em; */
-    /* opacity: 0.9; */
     background: rgba( 255, 255, 255, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7px );
--webkit-backdrop-filter: blur( 7px );
-/* border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px ); 
   }
-  
-  #navbar ul {
+  /* #navbar ul {
     display: flex;
-  }
-  
-  /* #navbar::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    width: 280%;
-    z-index: -1;
-    opacity: 0.9;
+    flex-direction: column;
   } */
-  
-  #navbar ul li {
-    list-style: none;
-    font-size: 1em;
-  }
-  
   #navbar ul li a {
     position: relative;
     font-family: "Krona One", sans-serif;
@@ -70,11 +42,60 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     width: 0%;
     left: 50%;
     height: 2px;
-    background: rgb(255, 24, 112);
+    background: rgb(55 158 226);
     transition: 0.3s ease-out;
   }
   
   #navbar ul li a:hover::after {
     left: 0;
     width: 100%;
+  }  
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+.navbar-toggle img
+{
+  filter: invert(100%);
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.active {
+    display: block;
+}
+/*  min-device-width karne se chrome ke inspect meh sahi se chal raha par bhar se gadbad ho rahi*/
+@media screen and (min-device-width: 978px) {
+
+  .main-nav {
+      display: flex;
+      flex-direction: row;
+      margin-right: 30px;
+      justify-content: flex-end;
+    } 
+  #navbar {
+    
+    display: flex;
+    align-items: center;
   }
+  .navbar-toggle {
+      display: none;
+  }
+}
