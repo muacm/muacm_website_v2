@@ -191,7 +191,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   padding-bottom: 0px;
   color: white;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .container{
@@ -236,7 +236,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   border-radius: 5px;
   color: white;
   text-decoration: none;
-  padding: 10px 90px;
+  padding: 10px 70px;
   /* margin:20px;
   margin-top: 50px; */
   font-family: "Krona One", sans-serif;
