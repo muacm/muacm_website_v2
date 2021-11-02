@@ -17,7 +17,7 @@
     background-color: black;
     justify-content: space-between;
     background: rgba( 255, 255, 255, 0.2 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.151);
     backdrop-filter: blur( 7px );
     -webkit-backdrop-filter: blur( 7px ); 
   }
@@ -41,8 +41,8 @@
     bottom: 0;
     width: 0%;
     left: 50%;
-    height: 2px;
-    background: rgb(55 158 226);
+    height: 3px;
+    background: rgb(55 ,158, 226);
     transition: 0.3s ease-out;
   }
   
