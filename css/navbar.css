@@ -82,7 +82,7 @@
     display: block;
 }
 /*  min-device-width karne se chrome ke inspect meh sahi se chal raha par bhar se gadbad ho rahi*/
-@media screen and (min-device-width: 978px) {
+@media screen and (min-width: 978px) {
 
   .main-nav {
       display: flex;

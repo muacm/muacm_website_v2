@@ -137,7 +137,7 @@ body {
 }
 
 
-@media screen and (min-width: 901px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
    .container-council {
       display: grid;
       grid-template-columns: auto auto;
@@ -154,7 +154,7 @@ body {
       grid-template-columns: auto auto;
    }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
    .container-council {
       display: grid;
       grid-template-columns: auto;

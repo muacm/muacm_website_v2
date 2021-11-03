@@ -19,7 +19,7 @@ body {
 #blogs {
     display: flex;
     flex-direction: column;
-    padding: 0px 120px;
+    /* padding: 0px 120px; */
     height: 35%;
     justify-content: center;
     align-items: center;
@@ -42,6 +42,7 @@ body {
   
   .container{
     display: grid;
+    margin: auto;
     grid-template-columns: auto auto auto;
     
   }
@@ -78,7 +79,7 @@ body {
   .card > .content > .imgdiv img{
     border-radius: 15px;
     margin-top: 2em;
-    width: 20vw;
+    width: 300px;
     font-family: "Krona One", sans-serif;
   }
   .btn-div{
