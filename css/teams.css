@@ -115,9 +115,6 @@ body {
    margin-bottom: 20px;
    font-weight: 800;
 }
-
-
-
 .card .content .sci a {
    text-decoration: none;
    color: #27282b;
@@ -125,6 +122,14 @@ body {
    margin: 10px;
    transition: color 0.4s;
 }
+/* .card:hover + .card .content .sci:hover
+{
+   display: block;
+} */
+/* .card .content .sci
+{
+   display: none;
+} */
 
 .fa-linkedin:hover {
    color: #037ab6;
@@ -172,5 +177,10 @@ body {
    .container-mentor {
       display: grid;
       grid-template-columns: auto;
+   }
+}
+@media screen and (max-width: 500px) {
+   .card {
+      width: 250px;
    }
 }

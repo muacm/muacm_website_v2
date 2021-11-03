@@ -51,8 +51,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 #home > .social{
-  gap: 2.5em;
-  display: flex;
+  /* gap: 2.5em; */
+  
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.social div{
+  margin: 1.5em 2.5em;
+
 }
 /* BUTTON */
 
@@ -158,12 +165,13 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
   grid-template-columns: auto auto;
   margin-top: 10px;
 }
-#about-acm div p{
-  width: 50vw;
+#about-acm div{
+  margin: auto;
 }
 .about-acm-youtube iframe{
   border-radius: 15px;
-  margin-top: 4.2em;
+  /* margin-top: 2em; */
+  width: 30vw;
 } 
 
 /* *****EVENTS***** */
@@ -171,13 +179,10 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 #events {
   display: flex;
   flex-direction: column;
-  padding: 0px 120px;
+  /* padding: 0px 120px; */
   height: 35%;
   justify-content: center;
   align-items: center;
-
-  /* background-color: #2b4162;
-background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
 
 }
 
@@ -186,7 +191,6 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   color: white;
   justify-content: center;
   font-weight: 400;
-  /* display: flex; */
 }
 
 #events p {
@@ -201,7 +205,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
 .container{
   display: grid;
   grid-template-columns: auto auto auto;
-  
+  margin: auto;
 }
 
 .container .card{
@@ -214,9 +218,9 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   background: rgba(255, 255, 255, 0.1);
   /* overflow: hidden; */
   /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  /* justify-content: center;
+  align-items: center; */
+  border-top: 2px solid rgba(199, 188, 188, 0.1);
   border-left: 2px solid rgba(255, 255, 255, 0.1);
   /* backdrop-filter:blur(4px); */
 }
@@ -234,13 +238,13 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   font-family: "Krona One", sans-serif;
 }
 .btn-div{
-    margin:50px;
+    margin: 50px 1.5em;
 }
 .btn-event{
   border-radius: 5px;
   color: white;
   text-decoration: none;
-  padding: 10px 70px;
+  padding: 10px 50px;
   /* margin:20px;
   margin-top: 50px; */
   font-family: "Krona One", sans-serif;
@@ -258,26 +262,36 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
   .container{
     display: grid;
     grid-template-columns: auto auto;
-    
   }
   #about-acm{
     display: grid;
     grid-template-columns: auto;
   }
-    #about-acm .content{
+    .about-acm-youtube iframe{
       width: 80vw;
-  }
-    .about-acm-youtube{
-      margin: auto;
       margin-bottom: 30px;
+    }
+    #home > .social{
+ 
+      grid-template-columns: auto;
     }
 }
 @media screen and (max-width: 980px) {
   .container{
     display: grid;
     grid-template-columns: auto;
-    
   } 
+  .about-acm-youtube iframe{
+    width: 80vw;
+  }
 }
+@media screen and (max-width: 500px) {
+  .about-acm-youtube iframe{
+    width: 90vw;
+  }
+  .container .card{
+    margin: 30px 0px;
+    width: 310px;
+  }
 
-
+}
