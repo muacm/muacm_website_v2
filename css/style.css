@@ -13,10 +13,27 @@ body {
   margin: 0;
   /* font-weight: 900; */
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  background-color: #21D4FD;
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  font-family: "merriweather,  sans-serif";
+  background-color:#1f1f1f; 
+  /* background-image: url("/img/bg/bg1.png");
+  background-repeat: no-repeat; */
+  background-size:100%;
+  
+  
+
+    /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
 }
+
+/* SVG*/
+.img{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 13%;
+  right: 40%;
+}
+
+
 
 /* HOME SECTION */
 #home {
@@ -26,7 +43,6 @@ body {
   height: 35%;
   justify-content: center;
   align-items: center;
-
   /* background: #0f0c29;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29); */ 
 }
@@ -44,9 +60,9 @@ body {
 }
 
 #home h1 {
-  color: white;
+  color: rgba(255, 255, 255, 0.938);
   font-size: 50px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1.5px;
   font-family: "Poppins", sans-serif;
 }
@@ -79,6 +95,7 @@ div[class*="box"] {
   text-align: center;
   width: 250px;
   cursor: pointer;
+  
 }
 
 .btn-two {
@@ -88,7 +105,8 @@ div[class*="box"] {
 }
 
 .btn-two a {
-  color: white;
+  color: black;
+  
 }
 
 .btn-two span {
@@ -97,6 +115,7 @@ div[class*="box"] {
   position: absolute;
   width: 100%;
   height: 100%;
+  
 }
 .btn-two::before {
   content: "";
@@ -107,8 +126,9 @@ div[class*="box"] {
   height: 100%;
   z-index: 1;
   transition: all 0.5s;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.849);
+  border-radius: 50px;
 }
 .btn-two::after {
   content: "";
@@ -119,8 +139,8 @@ div[class*="box"] {
   height: 100%;
   z-index: 1;
   transition: all 0.5s;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
+  /* border: 2.5px solid #FDC830; */
+  
 }
 .btn-two:hover::before {
   transform: rotate(-45deg);
@@ -140,14 +160,18 @@ div[class*="box"] {
   height: 35%;
   justify-content: center;
   align-items: center;
+  background: #1e19263d;
 
-  /* background-color: #130f40;
-background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
+  /* background-color: #1e1e1e; */
+/* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 }
 
 #about h2 {
-  font-family: "Krona One", sans-serif;
-  color: white;
+  font-family: "lato", sans-serif;
+  /* color: rgba(255, 255, 255, 0.938);   */
+  /* color: #1dca7f;  */
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.877);
   justify-content: center;
   font-weight: 900;
   display: flex;
@@ -156,7 +180,9 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 #about p {
   font-family: "Montserrat", sans-serif;
   padding: 40px;
-  color: white;
+  color: rgba(255, 255, 255, 0.733);
+  /* color: #0ecec1; */
+  
   justify-content: center;
   text-align: center;
 }
@@ -187,17 +213,17 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 }
 
 #events h2 {
-  font-family: "Krona One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   justify-content: center;
-  font-weight: 400;
+  
 }
 
 #events p {
   font-family: "Montserrat", sans-serif;
   padding: 40px;
   padding-bottom: 0px;
-  color: white;
+  color: rgba(255, 255, 255, 0.856);
   justify-content: center;
   text-align: left;
 }
@@ -215,7 +241,8 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(255, 255, 255, 0.075);
   /* overflow: hidden; */
   /* display: flex; */
   /* justify-content: center;
@@ -234,7 +261,7 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 
 .card > .content > h3{
   margin-top: 2.5em;
-  color:white;
+  color:#FDC830;
   font-family: "Krona One", sans-serif;
 }
 .btn-div{
@@ -242,7 +269,7 @@ background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 }
 .btn-event{
   border-radius: 5px;
-  color: white;
+  color: rgb(9, 239, 255);
   text-decoration: none;
   padding: 10px 50px;
   /* margin:20px;
