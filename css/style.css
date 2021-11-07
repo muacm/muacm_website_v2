@@ -13,9 +13,10 @@ body {
   margin: 0;
   /* font-weight: 900; */
   /* overflow-x: hidden; */
-  background-color:#171717; 
+  background-color:#1f1f1f; 
   background-size:100%;
   font-family:'Montserrat', sans-serif;
+  text-shadow: #4f4f4f !important;
 }
 
 /* SVG*/
@@ -36,6 +37,9 @@ body {
   height: 35%;
   justify-content: center;
   align-items: center;
+  /* background: url(/img/svg/svg2.svg) no-repeat;
+  background-position: right;*/
+   
   /* background: #0f0c29;  /* fallback for old browsers */
 /* background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29); */ 
 }
@@ -55,10 +59,13 @@ body {
 #home h1 {
   color: rgba(255, 255, 255, 0.938);
   font-size: 50px;
-  text-align: left;
+  text-align: center;
   letter-spacing: 1.5px;
   font-family:'Montserrat', sans-serif;
-  font-weight: 900;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.3em;
 }
 #home > .social{
   display: flex;
@@ -89,7 +96,7 @@ div[class*="box"] {
   /* border-radius: 28px; */
   font-weight: 700;
   font-size: 22px;
-
+  
   background: rgba(255, 255, 255, 0.3);
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   /* backdrop-filter: blur( 13px ); */
@@ -167,7 +174,8 @@ div[class*="box"] {
   height: 35%;
   justify-content: center;
   align-items: center;
-  background: #171717;
+  background: #1f1f1f;
+  
 
   /* background-color: #1e1e1e; */
 /* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
@@ -180,7 +188,7 @@ div[class*="box"] {
   font-weight: 800;
   color: rgba(255, 255, 255, 0.877);
   justify-content: center;
-  font-weight: 900;
+  font-weight: 700;
   display: flex;
 }
 
@@ -189,7 +197,7 @@ div[class*="box"] {
   padding: 40px;
   color: rgba(255, 255, 255, 0.733);
   /* color: #0ecec1; */
-  
+  font-weight: 400;
   justify-content: center;
   text-align: center;
 }
@@ -223,32 +231,37 @@ div[class*="box"] {
   font-family: "Montserrat", sans-serif;
   color: white;
   justify-content: center;
-  
+  font-weight: 600;
+
 }
 
 #events p {
   font-family: "Montserrat", sans-serif;
   padding: 40px;
+  text-shadow: #4f4f4f;
+  
   padding-bottom: 0px;
   color: rgba(255, 255, 255, 0.856);
   justify-content: center;
   text-align: left;
+  font-weight: 300;
 }
 
 .container{
   display: grid;
   grid-template-columns: auto auto auto;
   margin: auto;
+  
 }
 
 .container .card{
+  
   /* position: relative;  */
-  position: none;
   width: 380px;
   /* height: 400px; */
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
-  border-radius: 15px;
+  border-radius: 18px;
   /* background: rgba(255, 255, 255, 0.1); */
   background: rgba(255, 255, 255, 0.075);
   /* overflow: hidden;
@@ -258,6 +271,7 @@ div[class*="box"] {
   border-top: 2px solid rgba(199, 188, 188, 0.1);
   border-left: 2px solid rgba(255, 255, 255, 0.1);
   /* backdrop-filter:blur(4px); */
+  
 }
 
 .container .card .content{
@@ -265,19 +279,24 @@ div[class*="box"] {
   text-align: center;
   opacity: 1;
   transition: 0.3s;
+  
 }
 
 .card > .content > h3{
   margin-top: 2.5em;
-  color:#872DE2;
+  color: #ffbf42;
+  font-weight: 600;
   font-family:'Montserrat', sans-serif;
+  
 }
 .btn-div{
     margin: 50px 1.5em;
+    
 }
 .btn-event{
   border-radius: 5px;
   color: rgb(15, 15, 15);
+  font-weight: 650;
   text-decoration: none;
   padding: 10px 50px;
   /* margin:20px;
@@ -286,11 +305,15 @@ div[class*="box"] {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  
 }
 .btn-event:hover{
   background: rgba(255, 255, 255, 0.507);
   cursor: pointer;
+  transition: all 0.3s linear;
+  
 }
+
 /* Media Queries */
 @media screen and (max-width: 1400px) {
   .container{

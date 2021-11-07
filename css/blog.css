@@ -11,8 +11,11 @@ body {
   /* margin: 0;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif; */
-  background-color: #21D4FD;
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  background: #1f1f1f;
+  width: 100%;
+  font-family: "Montserrat", sans-serif !important;
+
+  /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
 }
 
 /*** Blogs Section ***/
@@ -20,13 +23,16 @@ body {
     display: flex;
     flex-direction: column;
     /* padding: 0px 120px; */
-    height: 35%;
     justify-content: center;
     align-items: center;
+    /* background: url(/img/svg/svg3.svg) no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: 15%; */
   }
   
   #blogs h2 {
-    font-family: "Krona One", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
     justify-content: center;
     font-weight: 400;
@@ -88,7 +94,7 @@ body {
 }
 .btn-event{
   border-radius: 5px;
-  color: white;
+  color: #20D6EC;  ;
   text-decoration: none;
   padding: 10px 100px;
   /* margin:20px;
