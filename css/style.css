@@ -69,8 +69,8 @@ body {
 }
 #home > .social{
   display: flex;
-  /* display: grid; */
-  /* grid-template-columns: auto auto auto; */
+  display: grid; 
+  grid-template-columns: auto auto auto;
 }
 .social div{
   margin: 1.5em 2.5em;
@@ -329,7 +329,7 @@ div[class*="box"] {
       margin-bottom: 30px;
     }
     #home > .social{
- 
+      text-align: center;
       grid-template-columns: auto;
     }
 }
