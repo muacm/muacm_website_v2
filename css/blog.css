@@ -83,7 +83,7 @@ body {
     margin-top: 2em;
     color:white;
     font-family: "Montserrat", sans-serif;
-    padding: 5px;
+    padding: 8px;
   }
   .card > .content > .imgdiv img{
     border-radius: 15px;
@@ -191,12 +191,7 @@ ul{
 }
 .footer-col .social-links a{
 	display: inline-block;
-<<<<<<< HEAD
 	height: 45px;
-=======
-	/* height: 45px; */
-  font-size: 24px;
->>>>>>> 5770333e49e8fc0f5a0a3a7a107b13c90542eee3
 	width: 45px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 20px 20px 0;
