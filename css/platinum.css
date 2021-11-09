@@ -45,7 +45,8 @@ img {
   filter: drop-shadow(12px 10px 4px rgba(0, 0, 0, 0.5));
 }
 .perk1{
-    padding-top: 100px;
+    padding-top: 70px;
+    align-items: center;
 }
 .perk1,
 .perk2,
@@ -55,42 +56,60 @@ img {
   display: flex;
 }
 
-.perk1,
-.perk3 {
+.perk1
+ {
   border: 8px solid transparent;
-  border-top-color: #323231;
-  border-bottom-color: #323231;
+  border-top-color: white;
+  border-bottom-color: #1f1f1f;
   /* background: #335771; */
-  /* margin-top: 20% ; */
+  margin-top: -5% ;
+  margin-bottom: 0%;
+  align-content: center;
 }
-.perk4 {
-  border: 8px solid transparent;
-  border-bottom-color: #323231;
+.perk3{
+  margin-bottom: 10%;
 }
 
-/* .perk2{
-  margin-top: 20%;
-} */
+.perk4 {
+  border: 8px solid transparent;
+  border-bottom-color: white;
+  margin-top: -7%;
+}
+
+.perk2{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  align-items: center;
+  align-content: center;
+}
 .con1,
 .con3 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 500;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 10%;
+  margin-top: 10px;
+
 }
 .con2,
 .con4 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 500;
   margin-left: 10%;
   padding-top: 5%;
 }
+
 .img1,
-.im2,
-.img3 {
-  margin-top: 0;
+.img2,
+.img3,
+.img4 {
+  margin-top: 0%;
 }
+
+.perk2 .img3{
+  size: 30%;
+}
+
 
 #checkbox {
   padding-right: 10px;
@@ -99,6 +118,7 @@ img {
 #reg {
   scroll-behavior: smooth;
   transition: 0.1ms ease linear;
+  /* padding-bottom: 20%; */
 }
 /* .arrow{
   
@@ -187,6 +207,8 @@ label {
   border-radius: 12px;
   box-shadow: black 3px 2px 7px;
   padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
 }
 #broo:hover {
   transition: ease-in-out 1ms linear;
