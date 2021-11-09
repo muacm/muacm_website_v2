@@ -3,4 +3,3 @@ $(function () {
     // $("#navbar").load("/index/teams.html"); 
     // $("#footer").load("./include/footer.html");
   });
-

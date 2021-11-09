@@ -314,6 +314,44 @@ div[class*="box"] {
   
 }
 
+
+
+/* FOOTER  */
+
+
+/* FOOTER */
+.footer {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0px;
+  background: black;
+}
+
+.footer-icons {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-icons ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.footer-icons ul li {
+  display: inline-block;
+  padding: 4px 4px;
+  margin: 0px 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-icons ul li img {
+  height: 30px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1400px) {
   .container{
