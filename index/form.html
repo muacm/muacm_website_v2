@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Payment Section</title>
+  <link rel="stylesheet" type="text/css" href="/css/form.css">
+  
+</head>
+ 
+<body>
+  <div class="login-root" >
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="formbg-outer" >
+          <div class="formbg" style="background-color: #323231;" >
+            <div class="formbg-inner padding-horizontal--48" style="background-color: #323231;" >
+             <span style="text-align:center; background: none; font-size: 30px;margin-bottom: 20px;">Register Here</span>
+              <form id="stripe-login"  style="background-color: #323231; " action="https://pmny.in/sIepzgHqM1vl" >
+               <div class="detail">
+                <div class="det1">
+                <div class="field padding-bottom--24" >
+                  <label for="Name">Name</label>
+                  <input type="text" name="namee" required >
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" required >
+                </div>
+                <div class="field padding-bottom--24">
+                <label for="Phone_No">Phone</label>
+                <input type="phone_number" name="phn" pattern="^\d{10}$" required >
+              </div>
+              <div class="field padding-bottom--24">
+              <label for="College_Name">College Name</label>
+              <input type="text" name="clg" required >
+            </div>
+          </div>
+          <div class="det2">
+            <div class="field padding-bottom--24">
+              <label for="Roll_No">Roll No.</label>
+              <input type="text" name="clg" required >
+            </div>
+            <div class="field padding-bottom--24">
+              <label for="program">Program</label>
+              <select name="prog" id="pro" required>
+                <option value="" id="opt">Select your program</option>
+                <option value="" id="opt">B.Tech</option>
+                <option value="" id="opt">BCA</option>
+                <option value="" id="opt">BBA</option>
+                <option value="" id="opt">BSC</option>
+                <option value="" id="opt">B.Com</option>
+                <option value="" id="opt">Others</option>
+              </select>
+            </div>
+            <div class="field padding-bottom--24">
+              <label for="branch">Branch</label>
+              <input type="text" name="branch" required >
+            </div>
+            <div class="field padding-bottom--24">
+              <label for="email">Year</label>
+              <select name="year" id="yr" required>
+                <option value="" id="opt">Year of Study</option>
+                <option value="" id="opt">1st</option>
+                <option value="" id="opt">2nd</option>
+                <option value="" id="opt">3rd</option>
+                <option value="" id="opt">4th</option>
+                <option value="" id="opt">5th</option>
+              </select>
+            </div>
+          </div>
+        </div>
+                <div class="field padding-bottom--24">
+                  <input type="submit" value="Pay Now" class="sub">
+                </div>
+               
+              </form>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
