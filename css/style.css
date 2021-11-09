@@ -287,7 +287,6 @@ div[class*="box"] {
   color: #ffbf42;
   font-weight: 600;
   font-family:'Montserrat', sans-serif;
-  
 }
 .btn-div{
     margin: 50px 1.5em;
@@ -390,7 +389,8 @@ ul{
 }
 .footer-col .social-links a{
 	display: inline-block;
-	height: 45px;
+	/* height: 45px; */
+  font-size: 24px;
 	width: 45px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 20px 20px 0;

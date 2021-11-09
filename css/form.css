@@ -11,16 +11,16 @@
 }
 body {
     min-height: 100%;
+ 
 }
 
 
 .login-root {
-    background-color:#1f1f1f;
+    background-color: rgb(39, 38, 38);
     display: flex;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    padding-top: 5%;
 }
 .loginbackground {
     min-height: 662px;
@@ -109,10 +109,9 @@ body {
     width: 100%;
     color: white;
     max-width: 648px;
-    height: 530px;
+   height: 530px;
     border-radius: 4px;
     box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
-   
 }
 span {
     display: block;
@@ -145,8 +144,8 @@ background-color: #323231;
 .det1 .field input  , select  {
     font-size: 16px;
     margin-right: 8%;
-    line-height: 18px;
-    padding: 8px 25px;
+    line-height: 28px;
+    padding: 8px 16px;
     width: 90%;
     min-height: 44px;
     border: unset;
@@ -162,11 +161,11 @@ background-color: #323231;
                 rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 .det2 .field input , select{
-
-    font-size: 16px;
+  
+  font-size: 16px;
     margin-right: 8%;
     line-height: 28px;
-    padding: 8px 22px;
+    padding: 8px 16px;
     width: 100%;
     min-height: 44px;
     border: unset;
@@ -215,7 +214,7 @@ input[type="submit"] {
     background :none;
     color: #E7A84B;
     border: 2px solid #E7A84B;
-    margin: 25px 35% ;
+    margin: 25px 35% 0;
     /* padding: 11px, 0px; */
     width: 30%;
     font-weight: bold;
@@ -225,8 +224,6 @@ input[type="submit"] {
     text-align: center;
     vertical-align: middle;
     padding-bottom: 8px;
-    font-weight: 600;
-    border-radius: 22px;
 }
 .field-checkbox input {
     width: 20px;
@@ -234,7 +231,6 @@ input[type="submit"] {
     margin-right: 5px;
     box-shadow: unset;
     min-height: unset;
-    
 }
 .field-checkbox label {
     display: flex;
