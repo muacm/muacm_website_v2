@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/medicapshosting/public_html/muacm_website_v2
+    - export DEPLOYPATH=/home/medicapshosting/public_html/muacm_website_v2/
     - /bin/cp index/index.html $DEPLOYPATH
     - /bin/cp css/style.css $DEPLOYPATH
