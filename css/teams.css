@@ -207,13 +207,13 @@ body {
    display: none;
 } */
 
-.fa-linkedin:hover {
+.sci .fa-linkedin:hover {
    color: #037ab6;
 }
-.fa-instagram:hover{
+.sci .fa-instagram:hover{
    color: #a80284bd;
 }
-.fa-github:hover{
+.sci .fa-github:hover{
    color: white;
 }
 
