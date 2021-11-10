@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/particle.css" />
   <link rel = "icon" href = "../img/logos/MuACMlogo.ico" type = "image/x-icon">
   <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
   <script src="https://kit.fontawesome.com/ff6e598646.js" crossorigin="anonymous"></script>
@@ -43,6 +44,21 @@
     </ul>
   </nav>
 
+<!-- Particle-->
+<body id='animation'>
+<div class="particles">
+  <canvas id='can'></canvas>
+  <div class="input">
+    <input type="text" id="updateText" placeholder="type your word">
+    <button id="updateButton"></button>
+  </div>
+</div>
+<script src="/js/particle.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+
+<!-- About Section-->
   <section id="home">
     <h1 class="primary" >
       We Believe in Building a Great Technical Community of Students
@@ -60,12 +76,11 @@
         <a href="https://www.instagram.com/mu_acm/" target="_blank"> <span>Follow on Instagram</span></a>
       </div>
     </div>
-    <br></br><br></br>
   </section>
 
   <section id="about">
     <!-- Starting the about MU content  -->
-    <br /><br /><br /><br /><br /><br /><br /><br /><br><br /><br></br>
+    <br /><br /><br /><br /><br /><br />
 
      <div class="middle-content">
       <div className="content-section" id="about-muacm">

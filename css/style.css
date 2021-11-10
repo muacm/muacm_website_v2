@@ -19,6 +19,8 @@ body {
   text-shadow: #4f4f4f !important;
 }
 
+
+
 /* SVG*/
 /* .img{
   position: absolute;
@@ -283,10 +285,11 @@ div[class*="box"] {
 }
 
 .card > .content > h3{
-  margin-top: 2.5em;
+  margin-top: 1em;
   color: #ffbf42;
   font-weight: 600;
   font-family:'Montserrat', sans-serif;
+  font-size: 28px;
 }
 .btn-div{
     margin: 50px 1.5em;
@@ -313,7 +316,7 @@ div[class*="box"] {
   
 }
 
-/* FOOTER */
+/* FOOTER*/
 body{
 	line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
@@ -389,7 +392,7 @@ ul{
 }
 .footer-col .social-links a{
 	display: inline-block;
-	/* height: 45px; */
+	 height: 45px; 
   font-size: 24px;
 	width: 45px;
 	background-color: rgba(255,255,255,0.2);
@@ -419,7 +422,7 @@ ul{
   color: white;
 	font-weight: 500;
 	position: relative;
-}
+} 
 
 /* Media Queries */
 @media screen and (max-width: 1400px) {
