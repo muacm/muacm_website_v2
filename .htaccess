@@ -1,0 +1,16 @@
+
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^medicaps\.acm\.org$ [OR]
+#RewriteCond %{HTTP_HOST} ^www\.medicaps\.acm\.org$
+#RewriteRule ^/?$ "http\:\/\/medicaps\.acm\.org\/" [R=301,L]
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+</IfModule>
