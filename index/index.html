@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>MUACM</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
 
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
@@ -19,7 +19,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/particle.css" />
   <link rel = "icon" href = "../img/logos/MuACMlogo.ico" type = "image/x-icon">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+  <script src="https://kit.fontawesome.com/ff6e598646.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+    <script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
 </head>
 
 <body>
@@ -41,8 +46,50 @@
     </ul>
   </nav>
 
+<!-- Particle-->
+<!--<div class="particles">
+  <canvas></canvas>
+  <div class="input">
+    <input type="text" id="updateText" placeholder="type your word">
+    <button id="updateButton"></button>
+  </div>
+</div>
+<script src="/js/particle.js"></script>
+<script src="/js/main.js"></script> -->
+ <div id="main"></div>
+ 
+<script>
+
+    container = document.getElementById("main");
+
+    var text = new Blotter.Text("MUACM", {
+        family: "serif",
+        size: 150,
+        fill: "#41C3FE",
+        paddingLeft: 80,
+        paddingRight: 80,
+        paddingTop: 80,
+        paddingBottom: 0,
+    });
+
+    var material = new Blotter.FliesMaterial();
+    material.uniforms.uPointCellWidth.value = 0.01;
+    material.uniforms.uPointRadius.value = 1.5;
+    material.uniforms.uSpeed.value = 10;
+
+    var blotter = new Blotter(material, {
+        texts: text
+    });
+
+    var scope = blotter.forText(text);
+    scope.appendTo(container);
+
+</script>
+
+
+<!-- About Section-->
   <section id="home">
-    <h1 class="primary" >
+    <h1 class="primary reveal" >
       We Believe in Building a Great Technical Community of Students
       <br /><br />
     </h1>
@@ -58,34 +105,40 @@
         <a href="https://www.instagram.com/mu_acm/" target="_blank"> <span>Follow on Instagram</span></a>
       </div>
     </div>
-    <br></br><br></br>
   </section>
 
   <section id="about">
     <!-- Starting the about MU content  -->
-    <br /><br /><br /><br /><br /><br /><br /><br /><br><br /><br></br>
-    <div class="content-section" id="about-mu">
-      <h2 style='font-size:35px;'>About Medi-Caps University</h2>
-      <p className="content" style='font-size:20px'>
+    <br /><br /><br /><br /><br /><br />
 
-        Medi-Caps has been a brand name in the arena of technical education.
-        Since its inception in July 2000, Medi-Caps has consistently aimed at
-        creating an ideal ambiance for budding technocrats and managers; and
-        helping them to grow like true professionals. With its highly
-        qualified faculty there seems an optimal blend of academic brilliance
-        and industry exposure, supplemented by highly specialized visiting
-        faculty and industry experts, senior professionals from various
-        segments of different industries and business houses. It was time now
-        to spread wings and move out for more exposure and widening of the
-        periphery.
-      </p>
-    </div>
+     <div class="middle-content">
+      <div class="content-section reveal" id="about-muacm">
+        <h2 style='font-size:35px'>About MUACM</h2>
+        <p class="content" style='font-size:20px; text-align:justify'>
+          MUACM is an official computing student chapter of Medi-caps
+          university under the patronage of technical club STIC. We are not
+          just an organization, we are family of like-minded people who intend
+          to make a difference in the society, MUACM provides you a platform
+          to explore, experience and contribute to the computing world
+          globally. It encourages you to pave the path of your career under
+          the guidance of professional. The chapter organizes several
+          jaw-dropping events, seminars, learning forums, talks by renowned
+          speakers, field trips, contests which includes international college
+          programming contest, student research competition, it also gives an
+          advantage to access all the services and activities of its parent
+          organization ACM with an opportunity to develop leadership skills
+          all of these develops the competitive spirit and develops the skills
+          suitable for the advancement of the technical world. To sum up
+          inception of MUACM creates a bridge between you and the computing
+          world, it opens the door for your dream success.
+        </p>
+      </div>
 
     <!-- Starting the about ACM content -->
-    <h2 style='font-size:35px'>About ACM</h2>
+    <h2 style='font-size:35px' class="content-section reveal">About ACM</h2>
     <div class="content-section" id="about-acm">
       <div>
-        <p class="content" style='font-size:19px'>
+        <p class="content reveal" style='font-size:20px;  text-align:justify'>
           The ACM (Association for Computing Machinery) is a 74-year-old
           international scientific and industrial computer society. Through
           its many Special Interest Groups, the ACM fosters research and
@@ -106,7 +159,7 @@
           world’s biggest problems will be solved using computing.
         </p>
       </div>
-      <div class="about-acm-youtube">
+      <div class="about-acm-youtube reveal">
         <iframe width="560" height="310" src="https://www.youtube-nocookie.com/embed/6L-szPtgMas"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -116,33 +169,26 @@
 
     <!-- Starting the about ACM-MU Chapter content -->
     <br></br>
-    <div class="middle-content">
-      <div className="content-section" id="about-muacm">
-        <h2 style='font-size:35px'>About ACM Medi-Caps Student Chapter</h2>
-        <p className="content" style='font-size:20px'>
-          MUACM is an official computing student chapter of Medi-caps
-          university under the patronage of technical club STIC. We are not
-          just an organization, we are family of like-minded people who intend
-          to make a difference in the society, MUACM provides you a platform
-          to explore, experience and contribute to the computing world
-          globally. It encourages you to pave the path of your career under
-          the guidance of professional. The chapter organizes several
-          jaw-dropping events, seminars, learning forums, talks by renowned
-          speakers, field trips, contests which includes international college
-          programming contest, student research competition, it also gives an
-          advantage to access all the services and activities of its parent
-          organization ACM with an opportunity to develop leadership skills
-          all of these develops the competitive spirit and develops the skills
-          suitable for the advancement of the technical world. To sum up
-          inception of MUACM creates a bridge between you and the computing
-          world, it opens the door for your dream success.
-        </p>
-      </div>
+<div class="content-section reveal" id="about-mu">
+      <h2 style='font-size:35px; '>About Medi-Caps University</h2>
+      <p className="content" style='font-size:20px;  text-align:justify'>
 
+        Medi-Caps has been a brand name in the arena of technical education.
+        Since its inception in July 2000, Medi-Caps has consistently aimed at
+        creating an ideal ambiance for budding technocrats and managers; and
+        helping them to grow like true professionals. With its highly
+        qualified faculty there seems an optimal blend of academic brilliance
+        and industry exposure, supplemented by highly specialized visiting
+        faculty and industry experts, senior professionals from various
+        segments of different industries and business houses. It was time now
+        to spread wings and move out for more exposure and widening of the
+        periphery.
+      </p>
+    </div>
       <!-- Starting the about Why connect? content -->
-      <div className="content-section" id="about-why-muacm">
+      <div class="content-section reveal" id="about-why-muacm">
         <h2 style='font-size:35px'>Why Connect with ACM</h2>
-        <p className="content" style='font-size:20px'>
+        <p className="content" style='font-size:20px;  text-align:justify'>
           Anybody who believes that as a professional you want to be the best
           professional you can be and take the world’s computing skills to
           another magical level, then ACM is what speaks to that aspiration.
@@ -162,14 +208,14 @@
           Being a part of this community is an honour in itself and definitely
           leads to your personal and professional growth.
         </p>
-        <br></br><br></br>
+       
       </div>
     </div>
   </section>
   
 
   <section id="events">
-    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
     <h2 style='font-size:50px'>Events</h2>
     <p></p>
 
@@ -178,7 +224,14 @@
         <div class="content">
           <h3>Game Development</h3>
           <p>
-            Game Development
+            It is a live workshop where you will be taught to develop the <b>Snowboarding</b> game yourself.
+            <br><br>Our speaker <b>Mr. Aman Gupta</b> is a game developer at <b>FiftyFive Technologies company.</b> Also he has 2 years of experience! 
+            and has done many projects in unity game engine.
+            <br><br>Make sure you all join with your devices with Unity software installed.
+            <br><br>Mark your calendars<br>
+            🗓️  14 November<br>
+            ⏰  11AM - 1PM
+
             <br /><br />
             <b>UPCOMING - November 14, 2021</b>
             <br /><br />
@@ -289,44 +342,42 @@
           </div>
         </div>
       </div>
-
     </div>
 
 <!-- FOOTER  -->
 
+<footer class="footer">
+    <div class="containers">
+    <div class="row">
+    <!--	<div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div> -->
 
-  <footer class="footer">
-  	 <div class="containers">
-  	 	<div class="row">
-  	 	<!--	<div class="footer-col">
-  	 			<h4>company</h4>
-  	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
-  	 				<li><a href="#">affiliate program</a></li>
-  	 			</ul>
-  	 		</div> -->
-
-  	 		<div class="footer-col">
-         <img width=20%;
-         src="/img/logos/logo.png">
-  	 		</div> 
-  	 		<div class="footer-col">
-  	 			<h4>Connect with us</h4>
-  	 			<div class="social-links">
-  	 				<a  href="https://discord.gg/nb33MJj5vq" target="_blank"><i class="fab fa-discord"></i></a>
-  	 				<a href="https://www.instagram.com/mu_acm/" target="_blank"><i class="fab fa-instagram"></i></a>
-  	 				<a href="https://www.linkedin.com/company/acm-student-chapter-medicaps/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-           </div>
-  	 		</div>  
-  	 	</div>
-       <div class="footer-hr">
-         	<hr></hr>
-           <h5>Copyright © 2021 MUACM All rights Reserved</h5>
-      </div>
-  	 </div>
-  </footer>
+      <div class="footer-col">
+        <img width=20%;
+        src="/img/logos/logo.png">
+      </div> 
+      <div class="footer-col">
+        <h4>Connect with us</h4>
+        <div class="social-links">
+          <a  href="https://discord.gg/nb33MJj5vq"><i class="fab fa-discord"></i></a>
+          <a href="https://www.instagram.com/mu_acm/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/acm-student-chapter-medicaps/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>  
+    </div>
+      <div class="footer-hr">
+        <hr></hr>
+          <h5>Copyright © 2021 MUACM All rights Reserved</h5>
+    </div>
+    </div>
+</footer>
 
 
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
@@ -352,6 +403,30 @@
     });
 </script>
   <!-- <script src="/js/script.js"></script> -->
+
+<!-- Scrolling effect-->
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
 </body>
 
 </html>

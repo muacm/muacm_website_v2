@@ -8,11 +8,11 @@
 }
 
 body {
-   display: flex;
+   /* display: flex; */
   justify-content: center;
   align-items: center; 
   min-height: 100vh;
-  flex-wrap: wrap; 
+  /* flex-wrap: wrap;  */
   width: 100%; 
   background: #1f1f1f;
   font-family: "Montserrat", sans-serif !important;
@@ -38,6 +38,7 @@ body {
     color: white;
     justify-content: center;
     font-weight: 400;
+    
   }
   
   #blogs p {
@@ -58,7 +59,7 @@ body {
   .container .card{
     /* position: relative; */
     width: 380px;
-    height: 460px;
+    height: 520px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
     border-radius: 15px;
@@ -77,19 +78,21 @@ body {
     text-align: center;
     opacity: 1;
     transition: 0.3s;
+    
   }
   
   .card > .content > h3{
     margin-top: 2em;
     color:white;
-    font-family: "Krona One", sans-serif;
-    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px;
+    font-size: 22px;
   }
   .card > .content > .imgdiv img{
     border-radius: 15px;
     margin-top: 2em;
     width: 300px;
-    font-family: "Krona One", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .btn-div{
     margin:50px 9px;
@@ -101,7 +104,7 @@ body {
   padding: 10px 100px;
   /* margin:20px;
   margin-top: 50px; */
-  font-family: "Krona One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 50px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   background: rgba(255, 255, 255, 0.1);
@@ -112,7 +115,9 @@ body {
   cursor: pointer;
 }
 
-/* body{
+
+/* FOOTER */
+body{
 	line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -120,10 +125,12 @@ body {
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-} */
+}
 .containers{
-	width: 100%;
-	margin:auto;
+	/* max-width: 1170px;
+   */
+   width: 100%;
+	
 }
 .row{
 	display: flex;
@@ -187,8 +194,7 @@ ul{
 }
 .footer-col .social-links a{
 	display: inline-block;
-	/* height: 45px; */
-  font-size: 24px;
+	height: 45px;
 	width: 45px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 20px 20px 0;

@@ -1,10 +1,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Payment Section</title>
   <link rel="stylesheet" type="text/css" href="/css/form.css">
+  <link rel = "icon" href = "../img/logos/MuACMlogo.ico" type = "image/x-icon">
   
 </head>
  
@@ -20,29 +19,30 @@
                 <div class="det1">
                 <div class="field padding-bottom--24" >
                   <label for="Name">Name</label>
-                  <input type="text" name="namee" required >
+                  <input type="text" name="Name" id="name" required >
                 </div>
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
-                  <input type="email" name="email" required >
+                  <input type="email" name="Email" id="email" required >
                 </div>
                 <div class="field padding-bottom--24">
                 <label for="Phone_No">Phone</label>
-                <input type="phone_number" name="phn" pattern="^\d{10}$" required >
+                <input type="phone_number" name="Phone" pattern="^\d{10}$"required >
               </div>
               <div class="field padding-bottom--24">
               <label for="College_Name">College Name</label>
-              <input type="text" name="clg" required >
+              <input type="text" name="Clg" required >
             </div>
           </div>
           <div class="det2">
             <div class="field padding-bottom--24">
               <label for="Roll_No">Roll No.</label>
-              <input type="text" name="clg" required >
+              <input type="text" name="Roll" required >
             </div>
             <div class="field padding-bottom--24">
               <label for="program">Program</label>
-              <select name="prog" id="pro" required>
+             <!-- <input type="text" name="Program" id="pro" required> -->
+              <select name="Program" id="pro" required>
                 <option value="" id="opt">Select your program</option>
                 <option value="" id="opt">B.Tech</option>
                 <option value="" id="opt">BCA</option>
@@ -54,25 +54,20 @@
             </div>
             <div class="field padding-bottom--24">
               <label for="branch">Branch</label>
-              <input type="text" name="branch" required >
+              <input type="text" name="Branch" required >
             </div>
             <div class="field padding-bottom--24">
-              <label for="email">Year</label>
-              <select name="year" id="yr" required>
-                <option value="" id="opt">Year of Study</option>
-                <option value="" id="opt">1st</option>
-                <option value="" id="opt">2nd</option>
-                <option value="" id="opt">3rd</option>
-                <option value="" id="opt">4th</option>
-                <option value="" id="opt">5th</option>
-              </select>
+              <label for="year">Year</label>
+              <input type="number" name="Year" id="Year" required min="1" max="5">
             </div>
           </div>
         </div>
                 <div class="field padding-bottom--24">
-                  <input type="submit" value="Pay Now" class="sub">
+                  <button class="sub" onclick="SubForm()"  >
+                    Pay Now
+                  </button>
                 </div>
-               
+              
               </form>
             </div>
           </div>
@@ -81,6 +76,26 @@
       </div>
     </div>
   </div>
-  
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    function SubForm(){
+        $.ajax({
+            url:'https://api.apispreadsheets.com/data/20287/',
+            type:'post',
+            data:$("#stripe-login").serializeArray(),
+            success: function(){
+              alert("Form Data Submitted :)")
+            },
+            error: function(){
+              alert("There was an error :(")
+            }
+        });
+       
+    }
+</script>
 </body>
 </html>
