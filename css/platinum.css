@@ -2,7 +2,8 @@
 *{
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
+  scroll-behavior: auto;
 }
 h1{
     margin:20px 0px;
@@ -222,7 +223,7 @@ label {
 #broo {
   text-align: center;
   margin-left: 40%;
-  color: #e7a84b;
+  color: whitesmoke;
   border: 3px solid #e7a84b;
   border-radius: 20px;
   box-shadow: black 3px 2px 7px;
