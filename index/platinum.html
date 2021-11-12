@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Platinum Membership</title>
+    <title>MUACM</title>
     <!-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -42,18 +42,20 @@
         </ul>
     </nav>
     <section>
+
     <div class="about">
-      <div class="abt1">
+      <div class="abt1 reveal">
         <h1>About Platinum Membership</h1>
         <p id="para">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum
+          Platinum Membership brings you generous rewards unrivalled experiences and exclusive 
+          invitations - you'll find all your benefits here. Our platinum member levels receive 
+          priority consideration to participate in activities in addition to  getting discounts
+           (up to 50%) on paid events, receiving platinum member certificates and an exclusive 
+           chance to participate in international competitions which add a lot of value to your resume.
         </p>
 
         <div class="about-btn">
+        <br>
             <a href="#reg">
             <button id="btn1">Know More <i class="fas fa-search"></i></button>
             </a>
@@ -71,26 +73,26 @@
 
 <!-- Perks -->
     <section class="perk1" id="reg">
-      <div class="con1">
+      <div class="con1 reveal">
         <p id="num1">
           <i class="far fa-check-square" id="checkbox"></i>Get yourself
           registered on ACM international community mailing list
         </p>
       </div>
-      <div class="img1">
+      <div class="img1 reveal">
         <img src="/images/mailing.webp" alt="" />
       </div>
     </section>
     <!-- <a href="#swags"><img id="arrow" src="./images/downarrow.webp" alt="" style="margin-top: -30%;"></a> -->
 
-    <div class="perk2" id="swags">
-      <div class="img2">
+    <div class="perk2 " id="swags">
+      <div class="img2 reveal">
         <img src="/images/t-shirt-with-gift-box-2869924-2386906.webp" alt="" />
       </div>
-      <div class="con2">
+      <div class="con2 reveal">
         <p id="num2">
           <i class="far fa-check-square" id="checkbox"></i>Receive ACM swags and
-          goodies(sticker, poster, bags, pens, ACM t-shirts, Hoodies, Mugs etc.)
+          goodies (sticker, poster, bags, pens, ACM t-shirts, Hoodies, Mugs, etc.)
         </p>
       </div>
     </div>
@@ -98,39 +100,40 @@
     
     <!-- <a href="#cert"><img id="arrow" src="./images/downarrow.webp" alt="" style="margin-top: -30%;"></a>-->
     <br></br><br></br>
-    <div class="perk3" id="cert">
-      <div class="con3">
+    <div class="perk3 " id="cert">
+      <div class="con3 reveal">
         <p id="num3">
-        <br></br>
           <i class="far fa-check-square" id="checkbox"></i>Receive platinum
           member certificates
         </p>
       </div>
-      <div class="img3">
-        <img width="450" height="411" src="/images/certificate-3970850-3286992.webp" alt="" />
+      <div class="img3 reveal">
+        <img width="400" height="400" src="/images/certificate-3970850-3286992.webp" alt="" />
       </div>
       <br></br><br></br>
     </div>
 
     
     <!-- <a href="#mana"><img id="arrow" src="./images/downarrow.webp" alt="" style="margin-top: -30%;"></a>-->
-    <div class="perk4" id="mana">
-      <div class="img4">
+    <div class="perk4 " id="mana">
+      <div class="img4 reveal">
         <img src="/images/work-management-4541065-3773180.webp" alt="" />
       </div>
-      <div class="con4">
+      <div class="con4 reveal">
         <p id="num4">
           <i class="far fa-check-square" id="checkbox"></i>Get a chance to
-          become a part of our organizing committee in future events.
+          become a part of our organizing committee in future events
         </p>
       </div>
     </div>
-    <div class="brochure">
+    <div class="brochure reveal">
     <br></br>
       <p id="bro" style="font-size:32px;">
-        To know more about Platinum Membership , Download the brochure
+        To know more about Platinum Membership, Download the brochure
       </p>
-      <div class="brochure-btn"><a id="broo" href="#">Download Brochure</a></div>
+      <br>
+      <div class="brochure-btn"><a id="broo" href="/images/brochure.pdf">Download Brochure</a>
+      </div>
     </div> 
   </section>
 <!-- FOOTER  -->
@@ -167,8 +170,32 @@
   </div>
   </div>
 </footer>
+
+<!-- Scrolling effect-->
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+
   </body>
-  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>

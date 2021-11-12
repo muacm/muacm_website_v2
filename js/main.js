@@ -1,7 +1,7 @@
 ~ function() {
   var requestAnimationFrame = window.requestAnimationFrame;
-  // var updateButton = document.querySelector('#updateButton');
-  // var updateText = document.querySelector('#updateText');
+  var updateButton = document.querySelector('#updateButton');
+  var updateText = document.querySelector('#updateText');
   var canvas = document.querySelector('canvas');
   var ctx = canvas.getContext('2d');
   //var TEXT = 'HELLO WORLD';
@@ -9,14 +9,36 @@
   var WIDTH, HEIGHT;
   var mouseX = 1000,
     mouseY = 1000;
-  window.onresize = main;
+  window.onload = main;
   window.addEventListener("mousemove", mouseMove, false);
   window.addEventListener("touchmove", touchMove, false);
 
-  // updateButton.onclick = function(){
-  //   TEXT = updateText.value || TEXT;
-  //   main();
-  // }
+  window.onload = function() {
+    var img = document.getElementById('target');
+    var width = img.naturalWidth;
+    var height = img.naturalHeight;
+
+    var canvas = document.createElement('canvas'); //Create a canvas element
+    //Set canvas width/height
+    canvas.style.width=width;
+    canvas.id = 'mycanvas';
+    canvas.style.height=height;
+    //Set canvas drawing area width/height
+    canvas.width = width;
+    canvas.height = height-100;
+    //Position canvas
+    canvas.style.position='relative';
+    canvas.style.left=0;
+    canvas.style.top=0;
+    canvas.style.zIndex=100000;
+    canvas.style.pointerEvents='none'; //Make sure you can click 'through' the canvas
+    $('#container').append(canvas);
+}
+
+  updateButton.onclick = function(){
+    TEXT = updateText.value || TEXT;
+    main();
+  }
 
   function getQueryParams() {
     var result = {}
@@ -39,12 +61,10 @@
     var particles = [];
     //ctx.globalAlpha = 1;
     //ctx.globalCompositeOperation = "lighter"; 
-    // 新建粒子
+
     createParticles();
-    // 动画循环
     function run() {
       requestAnimationFrame(run);
-      // 清除画布
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
       ctx.beginPath();
 
@@ -54,24 +74,25 @@
     }
     run();
 
-    // createParticles
     function createParticles() {
       if(WIDTH < 480) {
-        ctx.font = "30px '微软雅黑'";
+        ctx.font = "30px 'Times New Roman'";
       }else {
-        ctx.font = "80px '微软雅黑'";
+        ctx.font = "80px 'Times New Roman'";
       }
       // createLinearGradient
       var gradient = ctx.createLinearGradient(0, 0, WIDTH, 0);
       gradient.addColorStop("0", "white");
-      gradient.addColorStop("0.2", "gold");
-      gradient.addColorStop("0.5", "pink");
-      gradient.addColorStop("0.7", "white");
-      gradient.addColorStop("1.0", "red");
+      gradient.addColorStop("0.8", "cyan");
+      gradient.addColorStop("0.4", "#00bfff");
+      gradient.addColorStop("0.6", "#00ffff");
+      //gradient.addColorStop("1.0", "");
+      //gradient.addColorStop("0.7", "green");
+      //gradient.addColorStop("0.7", "green");
       // lineGradient
       ctx.strokeStyle = gradient;
       var textWidth = ctx.measureText(TEXT).width;
-      ctx.strokeText(TEXT, WIDTH/2 - textWidth/2, HEIGHT/3);
+      ctx.strokeText(TEXT, WIDTH/2 - textWidth/2, HEIGHT/11);
       // get particle from canvas
       var imgData = ctx.getImageData(0, 0, WIDTH, HEIGHT);
       for (var i = 0, len = imgData.data.length; i < len; i = i + 4) {
@@ -97,8 +118,11 @@
 
   // set canvas to full screen
   function setWidthHeight() {
-    WIDTH = canvas.width = parseInt(window.getComputedStyle(document.querySelector('body')).width);
-    HEIGHT = canvas.height = parseInt(window.getComputedStyle(document.querySelector('body')).height);
+    WIDTH = canvas.width = 600;
+    HEIGHT = canvas.height = 1500;
+    canvas.height = canvas.height - 2900;
+    //canvas.width = canvas.width - 100;
+
   }
   // mouse move event
   function mouseMove(event) {

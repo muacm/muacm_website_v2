@@ -2,20 +2,19 @@ var PI2 = Math.PI * 2;
 
 function randomColor() {
   return 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
-  // return 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
 }
 
 function Particle(option) {
   option = option || {};
-  this.x = option.x || 0; // 运动坐标
+  this.x = option.x || 0;
   this.y = option.y || 0;
-  this.lifeTime = option.lifeTime || 0.95; // 生命
-  this.targetX = this.x; // 初始坐标
+  this.lifeTime = option.lifeTime || 0.95;
+  this.targetX = this.x;
   this.targetY = this.y;
   this.xSpeed = option.xSpeed || 0;
   this.ySpeed = option.ySpeed || 0;
   this.color = option.color || randomColor();
-  this.tickMaxDistance = 100; // 最大捕捉距离
+  this.tickMaxDistance = 100;
 }
 
 Particle.prototype.drawLine = function(x0, y0, x1, y1, ctx) {
@@ -80,13 +79,13 @@ Particle.prototype.drawLine = function(x0, y0, x1, y1, ctx) {
   } // end function
 
 Particle.prototype.tick = function(tickX, tickY, ctx) {
-    var targetDistanceX = this.targetX - this.x; // 运动点与目标点的x差
+    var targetDistanceX = this.targetX - this.x;
     var targetDistanceY = this.targetY - this.y;
-    var tickDistanceX = tickX - this.x; // 运动点与扑捉点x差
-    var tickDistanceY = tickY - this.y;
-    var targetDistance = Math.sqrt(targetDistanceX * targetDistanceX + targetDistanceY * targetDistanceY); // 运动点与目标的的距离
-    var tickDistance = Math.sqrt(tickDistanceX * tickDistanceX + tickDistanceY * tickDistanceY); // 运动点与扑捉点的距离
-    if (tickDistance + Math.random() * tickDistance < this.tickMaxDistance) { //捕捉到运动点
+    var tickDistanceX = tickX - this.x - 100;
+    var tickDistanceY = tickY - this.y - 280;
+    var targetDistance = Math.sqrt(targetDistanceX * targetDistanceX + targetDistanceY * targetDistanceY);
+    var tickDistance = Math.sqrt(tickDistanceX * tickDistanceX + tickDistanceY * tickDistanceY);
+    if (tickDistance + Math.random() * tickDistance < this.tickMaxDistance) {
       if (tickDistance) {
         this.lifeTime = 1;
         this.xSpeed = this.xSpeed + tickDistanceX / tickDistance;
@@ -117,4 +116,4 @@ Particle.prototype.tick = function(tickX, tickY, ctx) {
     }
     this.lifeTime = Math.max(this.lifeTime, 0.1);
     this.drawLine(Math.round(this.x), Math.round(this.y), Math.round(xx), Math.round(yy), ctx);
-  } // end function
+  }

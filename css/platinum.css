@@ -2,7 +2,8 @@
 *{
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
+  scroll-behavior: auto;
 }
 h1{
     margin:20px 0px;
@@ -77,7 +78,7 @@ img {
 }
 
 .perk2{
-  margin-top: 0%;
+  margin-top: -10px;
   margin-bottom: 0%;
   align-items: center;
   align-content: center;
@@ -91,25 +92,44 @@ img {
   margin-top: 10px;
 
 }
-.con2,
-.con4 {
+
+.con2 {
   font-size: 40px;
   font-weight: 500;
   margin-left: 10%;
-  padding-top: 5%;
+  margin-top: -60px;
+  padding-right: 10px;
 }
 
-.img1,
-.img2,
-.img3,
-.img4 {
-  margin-top: 0%;
+.img1
+{
+  margin-top: -20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.img2{
+  padding-left: 10px;
 }
 
-.perk2 .img3{
-  size: 30%;
+.img3{
+padding-right: 100px;
+margin-top: -60px;
+margin-bottom: 100px;
 }
 
+.img4{
+  padding-left: 10px;
+  margin-top: -180px;
+  margin-bottom: 50px;
+}
+
+.con4{
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 25%;
+  margin-top: -60px;
+  padding-right: 100px;
+}
 
 #checkbox {
   padding-right: 10px;
@@ -186,7 +206,8 @@ label {
   width: 100px;
 }
 .brochure {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  margin-top: 15px;
 }
 /* .brochure-btn{
 } */
@@ -202,13 +223,14 @@ label {
 #broo {
   text-align: center;
   margin-left: 40%;
-  color: #e7a84b;
+  color: whitesmoke;
   border: 3px solid #e7a84b;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: black 3px 2px 7px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
+  padding: 12px;
 }
 #broo:hover {
   transition: ease-in-out 1ms linear;
@@ -238,3 +260,14 @@ label {
           background-position: 0% 50%;
       }
   } */
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
