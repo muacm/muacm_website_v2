@@ -1,7 +1,7 @@
 /* NAVIGATION BAR
   /* NAVIGATION BAR : LOGO & IMAGE */
   #logo {
-    margin: 0px 30px;
+    margin: 0px 0px;
   }
   
   #logo img {
@@ -76,7 +76,8 @@
 .navbar-toggle img
 {
   filter: invert(100%);
-  height: 20px;
+  margin: 10px;
+  height: 40px;
   border: 2px solid black;
   border-radius: 3px;
 }
