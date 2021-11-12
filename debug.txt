@@ -1,4 +1,0 @@
-Ping
-ping 2
-ping 3
-ping 5
