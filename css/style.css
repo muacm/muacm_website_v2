@@ -19,21 +19,13 @@ body {
   text-shadow: #4f4f4f !important;
 }
 
-body .main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
- justify-content: center;
-}
 
 #main {
+  position: relative;
   padding-top: 80px;
   margin-bottom: -170px;
-  text-align: center;
-  padding-left: 25rem;
   background-color: #1e1e1e;
- justify-content: center;
- position: relative;
+  text-align: center;
 }
 
 /* SVG*/
