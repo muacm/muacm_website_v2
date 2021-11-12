@@ -1,1 +1,2 @@
 Ping
+ping 2
