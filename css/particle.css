@@ -260,7 +260,6 @@ button {
 @media screen and (max-width: 500px) {
   .about-acm-youtube iframe{
     width: 90vw;
-    
   }
   .container .card{
     margin: 30px 0px;
