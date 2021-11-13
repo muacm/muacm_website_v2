@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/css/platinum.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="../css/style.css"/>
     <link rel = "icon" href = "../img/logos/MuACMlogo.ico" type = "image/x-icon">
     <script src="https://kit.fontawesome.com/ff6e598646.js" crossorigin="anonymous"></script>
   </head>
@@ -29,7 +30,7 @@
           <img src="/img/bg/bar.png" alt="">
         </span>
         <div id="logo">
-          <a href="#home">
+          <a href="./index.html#home">
             <img src="/img/logos/logo.png" alt="MUACM." />
           </a>
         </div>
@@ -106,7 +107,7 @@
         </p>
       </div>
       <div class="img3 reveal">
-        <img width="400" height="400" src="/images/certificate-3970850-3286992.webp" alt="" />
+        <img width="280"  src="/images/certificate-3970850-3286992.webp" alt="" />
       </div>
       <br></br><br></br>
     </div>
@@ -190,6 +191,15 @@
     </script>
 
   </body>
+  <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+  
+    navBarToggle.addEventListener('click', function () {
+        
+        mainNav.classList.toggle('active');
+    });
+  </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>

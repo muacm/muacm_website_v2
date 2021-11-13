@@ -238,7 +238,7 @@ grid-area: map;
 
 /* Responsiveness*/
 
-@media (max-width:991px)
+@media screen and (max-width:991px)
 {
     body
     {

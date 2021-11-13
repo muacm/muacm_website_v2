@@ -8,6 +8,7 @@
   background-color: #1f1f1f;
   word-wrap: break-word;
   font-family:'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 body {
     min-height: 100%;
@@ -110,7 +111,7 @@ body {
     width: 100%;
     color: white;
     max-width: 648px;
-    height: 530px;
+    /* height: 530px; */
     border-radius: 4px;
     box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
@@ -182,7 +183,10 @@ label {
                 rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 .detail{
-  display: flex;
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: auto auto;
   background-color: #323231;
 }
 .det1{
@@ -199,12 +203,12 @@ background: white;
   width: 135px;
    background: none ;
    border: 2px solid #E7A84B;
-   margin:35px 38% 0 ;
+   margin:35px 38%;
     text-align: center;
     font-weight: 800;   
     padding: 11px 0px;
     color: white; 
-    margin-left: 40%;
+    /* margin-left: 40%; */
     font-size: 20px; 
     display: inline-block;
     text-decoration: none;
@@ -287,5 +291,29 @@ a.ssolink {
   }
   100% {
     transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 900px){
+  .detail{
+    /* flex-direction: column; */
+    grid-template-columns: auto;
+  }
+  .det2 .field input , select{
+  
+    font-size: 16px;
+      margin-right: 8%;
+      line-height: 28px;
+      padding: 8px 24px;
+      width: 90%;
+      min-height: 44px;
+    
+  }
+  .det2{
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 360px){
+  .sub{
+    margin: 35px 20%;
   }
 }
