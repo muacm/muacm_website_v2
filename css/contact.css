@@ -234,3 +234,63 @@ grid-area: map;
         pointer-events: none;
     }
 }
+
+
+/* Responsiveness*/
+
+@media (max-width:991px)
+{
+    body
+    {
+     background: #1e1e1e;
+    }
+
+    .contactUs{
+        padding:20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" 
+        "info" 
+        "map";
+    }
+
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox
+    {
+        width: 100%;
+    }
+    .contact
+    {
+        padding:30px;
+    }
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    body
+    {
+     background: #1e1e1e;
+    }
+
+    .contactUs{
+        padding:20px;
+    }
+    .form
+    {
+        width: 100%; 
+    }
+    .contact.info {
+        padding: 10px;
+        margin-right: 20px;
+    }
+}

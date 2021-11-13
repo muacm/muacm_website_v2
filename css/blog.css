@@ -59,7 +59,7 @@ body {
   .container .card{
     /* position: relative; */
     width: 380px;
-    height: 520px;
+    height: 490px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
     border-radius: 15px;

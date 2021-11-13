@@ -23,7 +23,7 @@ body {
 }
 #btn1,
 #btn2 {
-  background: none;
+  background: #1e1e1e;
   color: #e7a84b;
   border: #e7a84b 2px solid;
   border-radius: 20px;
@@ -138,6 +138,7 @@ margin-bottom: 100px;
 #reg {
   scroll-behavior: smooth;
   transition: 0.1ms ease linear;
+ 
   /* padding-bottom: 20%; */
 }
 /* .arrow{

@@ -73,6 +73,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   line-height: 1.3em;
+  padding-top: 13rem;
 }
 #home > .social{
   display: flex;
