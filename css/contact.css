@@ -238,12 +238,8 @@ grid-area: map;
 
 /* Responsiveness*/
 
-@media screen and (max-width:991px)
+@media screen and (max-width:990px)
 {
-    body
-    {
-     background: #1e1e1e;
-    }
 
     .contactUs{
         padding:20px;
@@ -280,6 +276,7 @@ grid-area: map;
     body
     {
      background: #1e1e1e;
+     
     }
 
     .contactUs{
@@ -287,10 +284,18 @@ grid-area: map;
     }
     .form
     {
-        width: 100%; 
+        width: 81%; 
     }
     .contact.info {
         padding: 10px;
         margin-right: 20px;
+    }
+
+    .contact map{
+        width: 80%;
+    }
+    .infoBox{
+        width: 80%;
+        
     }
 }
