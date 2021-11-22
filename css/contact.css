@@ -238,7 +238,7 @@ grid-area: map;
 
 /* Responsiveness*/
 
-@media screen and (max-width:990px)
+@media screen and (max-width:900px)
 {
 
     .contactUs{
@@ -273,29 +273,28 @@ grid-area: map;
 
 @media screen and (max-width:500px)
 {
-    body
-    {
-     background: #1e1e1e;
-     
+    body{
+        position: absolute;;
     }
 
-    .contactUs{
-        padding:20px;
+    .box{
+        grid-template-columns: 5fr;
     }
+
     .form
     {
-        width: 81%; 
-    }
-    .contact.info {
-        padding: 10px;
-        margin-right: 20px;
+        width: 100%; 
     }
 
-    .contact map{
-        width: 80%;
+    .contact .info {
+        padding: 10px;
+    }
+
+    .contact .map{
+        width: 77%;
     }
     .infoBox{
-        width: 80%;
+        width: 77%;
         
     }
 }

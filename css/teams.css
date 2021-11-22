@@ -256,6 +256,10 @@ body {
    }
 }
 @media screen and (max-width: 500px) {
+
+   body{
+      background-size: 200%;
+   }
    .card {
       width: 250px;
    }

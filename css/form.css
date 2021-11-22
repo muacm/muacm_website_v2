@@ -306,14 +306,19 @@ a.ssolink {
       padding: 8px 24px;
       width: 90%;
       min-height: 44px;
-    
   }
   .det2{
     margin-left: 3%;
   }
 }
+@media screen and (max-width: 500px){
+  .sub{
+    margin: 35px 32%;
+  }
+}
+
 @media screen and (max-width: 360px){
   .sub{
-    margin: 35px 20%;
+    margin: 35px 24%;
   }
 }
