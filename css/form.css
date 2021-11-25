@@ -203,7 +203,7 @@ background: white;
   width: 135px;
    background: none ;
    border: 2px solid #E7A84B;
-   margin:35px 38%;
+   margin:20px 38%;
     text-align: center;
     font-weight: 800;   
     padding: 11px 0px;
@@ -214,6 +214,7 @@ background: white;
     text-decoration: none;
     border-radius: 20px;
     font-weight: 600;
+    margin-bottom: 0px;
 }
 input[type="submit"] {
     background :none;
@@ -306,14 +307,19 @@ a.ssolink {
       padding: 8px 24px;
       width: 90%;
       min-height: 44px;
-    
   }
   .det2{
     margin-left: 3%;
   }
 }
+@media screen and (max-width: 500px){
+  .sub{
+    margin: 35px 32%;
+  }
+}
+
 @media screen and (max-width: 360px){
   .sub{
-    margin: 35px 20%;
+    margin: 20px 24%;
   }
 }
