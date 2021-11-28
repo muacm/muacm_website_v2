@@ -198,7 +198,7 @@ div[class*="box"] {
   padding-bottom: 0px;
   color: rgba(255, 255, 255, 0.856);
   justify-content: center;
-  text-align: left;
+  text-align: justify;
   font-weight: 300;
 }
 
@@ -250,7 +250,6 @@ div[class*="box"] {
 
 .btn-event{
   border-radius: 5px;
-  color: rgb(15, 15, 15);
   font-weight: 650;
   text-decoration: none;
   padding: 10px 50px;
