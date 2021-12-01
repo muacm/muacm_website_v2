@@ -275,6 +275,12 @@ label {
   opacity: 1;
 }
 @media screen and (max-width: 1000px) {
+  .abt1 {
+    margin-top: -21%;
+}
+.perk1{
+  margin-top: -20%;
+}
   /* .about{
       grid-template-columns: auto;
     } */
@@ -297,6 +303,7 @@ label {
   .img2 img,.img1 img,.img3 img,.img4 img{
     width: 320px;
     margin-bottom: 30px;
+    
     /* display: none; */
   }
   #broo{
