@@ -212,8 +212,10 @@ label {
   margin-bottom: 10%;
   margin-top: 15px;
 }
-/* .brochure-btn{
-} */
+ .brochure-btn{
+   margin: 0;
+   top: 0;
+} 
 #bro {
   margin: 35px 0px;
 }
@@ -224,8 +226,7 @@ label {
   font-weight: bold;
 }
 #broo {
-  text-align: center;
-  margin-left: 40%;
+  margin-left: 42.7%;
   color: whitesmoke;
   border: 3px solid #e7a84b;
   border-radius: 20px;
@@ -233,12 +234,18 @@ label {
   padding: 10px;
   font-size: 22px;
   font-weight: 400;
-  padding: 12px;
+
 }
 #broo:hover {
-  transition: ease-in-out 1ms linear;
-  transform: translateY(-5px);
   box-sizing: border-box;
+  color: #e7a84b;
+}
+
+.refund {
+  font-size: 12px;
+  /* text-align: center; */
+ text-align: center;
+  padding-top: 30px;
 }
 /* html, body {
     width: 100%;
@@ -307,7 +314,7 @@ label {
     /* display: none; */
   }
   #broo{
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .img3 {
     padding-right: 30px;
