@@ -312,6 +312,9 @@ div[class*="box"] {
   }
 }
 @media screen and (max-width: 500px) {
+  #home h1{
+    font-size: 45px;
+  }
   .about-acm-youtube iframe{
     width: 90vw;
   }

@@ -226,7 +226,7 @@ label {
   font-weight: bold;
 }
 #broo {
-  margin-left: 42.7%;
+  margin-left: 42.5%;
   color: whitesmoke;
   border: 3px solid #e7a84b;
   border-radius: 20px;
@@ -282,6 +282,12 @@ label {
   opacity: 1;
 }
 @media screen and (max-width: 1000px) {
+  .abt1 {
+    margin-top: -21%;
+}
+.perk1{
+  margin-top: -20%;
+}
   /* .about{
       grid-template-columns: auto;
     } */
@@ -304,10 +310,11 @@ label {
   .img2 img,.img1 img,.img3 img,.img4 img{
     width: 320px;
     margin-bottom: 30px;
+    
     /* display: none; */
   }
   #broo{
-    margin-left: 15%;
+    margin-left: 18%;
   }
   .img3 {
     padding-right: 30px;

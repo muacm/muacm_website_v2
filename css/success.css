@@ -1,11 +1,9 @@
 body{ 
-  margin: 0;
   padding: 0;
   background-color: #1f1f1f;
   color: white;
   text-align: center;
 }
-
 
 
 .success h1{ 
@@ -130,65 +128,6 @@ p{
     font-weight: 600;
 }
 
-
-  
-@media screen and (max-width: 500px) 
-{
-    .success h1 
-    {
-    font-size: 40px;
-    text-shadow: #ffd700 0.01em 0.01em 0.2em;
-    padding: 10px;
-    text-align: justify;
-    }
-
-    .success h3
-    {
-    font-size: 30px;
-    padding: 10px;
-    text-align: justify;
-    }
-
-    p{
-        font-size: 25px;
-        padding: 10px;
-        text-align: justify;
-    }
-}
-
-@media screen and (max-width: 360px) 
-{
-  
-    .success h1 
-    {
-    font-size: 40px;
-    text-shadow: #ffd700 0.01em 0.01em 0.2em;
-    padding: 10px;
-    text-align: justify;
-    }
-
-    .success h3
-    {
-    font-size: 35px;
-    padding: 10px;
-    text-align: justify;
-    }
-
-    p{
-        font-size: 25px;
-        padding: 10px;
-        text-align: justify;
-    }
-    .sub{
-      margin: 30px 29%;
-    }
-    .cybr-btn{
-      min-width: 100px;
-      height: 75px;
-      margin-bottom: 20px;
-    }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -244,6 +183,7 @@ body .cybr-btn + .cybr-btn {
   height: 75px;
   line-height: 75px;
   transition: background 0.2s;
+  margin: 20px;
 }
 
 .cybr-btn:hover {
@@ -378,4 +318,63 @@ body .cybr-btn + .cybr-btn {
 
 .cybr-btn:nth-of-type(2) {
   --primary-hue: 260;
+}
+
+  
+@media screen and (max-width: 500px) 
+{
+    .success h1 
+    {
+    font-size: 40px;
+    text-shadow: #ffd700 0.01em 0.01em 0.2em;
+    padding: 10px;
+    text-align: justify;
+    }
+
+    .success h3
+    {
+    font-size: 30px;
+    padding: 10px;
+    text-align: justify;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 10px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 360px) 
+{
+  
+    .success h1 
+    {
+    font-size: 40px;
+    text-shadow: #ffd700 0.01em 0.01em 0.2em;
+    padding: 10px;
+    text-align: justify;
+    }
+
+    .success h3
+    {
+    font-size: 35px;
+    padding: 10px;
+    text-align: justify;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .sub{
+      margin: 30px 29%;
+    }
+    .cybr-btn{
+      min-width: 100px;
+      height: 75px;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
 }
