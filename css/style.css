@@ -151,11 +151,12 @@ div[class*="box"] {
   font-family: "Montserrat", sans-serif;
   padding: 40px;
   color: rgba(255, 255, 255, 0.733);
-  /* color: #0ecec1; */
+  padding-bottom: 10px;
   font-weight: 400;
   justify-content: center;
   text-align: center;
 }
+
 #about-acm{
   display: grid;
   grid-template-columns: auto auto;
