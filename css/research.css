@@ -42,5 +42,43 @@
     text-align: center;
     cursor: pointer;
 }
+/* Content-img */
+.content-img{
+  margin-top: 80px;
+}
 
+/*  about-research*/
+#about-research{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* Research-for-undergraduate */
+#Research-for-undergraduate
+{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#research-img{
+  margin-top: 200px;
+}
+
+/* Career-Benefits */
+#Career-Benefits{
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+/* Research@MUACM */
+#Research-MUACM{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+/* profile-img */
+#profile-img{
+  /* width: 400px; */
+  margin-top: 200px;
+}
 
