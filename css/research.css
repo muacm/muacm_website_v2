@@ -41,6 +41,7 @@
     padding: 15px;
     text-align: center;
     cursor: pointer;
+    margin-top: 15px;
 }
 /* Content-img */
 .content-img{
@@ -60,7 +61,7 @@
   grid-template-columns: auto auto;
 }
 #research-img{
-  margin-top: 200px;
+  margin-top: 55px;
 }
 
 /* Career-Benefits */
@@ -79,6 +80,39 @@
 /* profile-img */
 #profile-img{
   /* width: 400px; */
-  margin-top: 200px;
+  margin-top: 90px;
 }
+
+/* box */
+#card-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* card */
+.card{
+  /* position: relative; */
+  width: 380px;
+  height: 490px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  /* backdrop-filter:blur(4px); */
+}
+.card .content{
+  /* padding: 10px; */
+  text-align: center;
+  opacity: 1;
+  transition: 0.3s;
+  
+}
+
+
 
