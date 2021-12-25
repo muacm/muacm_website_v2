@@ -36,12 +36,13 @@
 }
 /* joinUs-btn */
 .joinUs-btn{
-    width: 100px;
+    width: 250px;
     margin: auto;
     padding: 15px;
     text-align: center;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 /* Content-img */
 .content-img{
@@ -115,4 +116,16 @@
 }
 
 
+/* Scrolling effect*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 
