@@ -417,5 +417,37 @@ body {
   .UNDERGRADUATES-img img{
     height: 30rem !important;
   }
+  .para{
+    width: 400px;
+    margin: auto;
+  }
+  #RESEARCH-MUACM-h2,#Benefits-h2{
+    font-size: 32px !important;
+  }
+  .research-ul li{
+    width: 344px !important;
+  }
+  .d-flex div p{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 344px !important;
+    margin: auto !important;
+    text-align: center !important;
+  }
+  .container.right .contents {
+    padding: 30px 30px 30px 90px;
+    border-radius: 200px 0 0 200px;
+  }
+  .container.left .contents{
+    border-radius: 200px 0 0 200px;
+
+  }
+  #card-contain .card {
+    width: 350px;
+  }
+  .footer {
+    width: 108vw;
+  }
 }
+
 

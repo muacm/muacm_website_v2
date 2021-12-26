@@ -57,7 +57,7 @@
           RESEARCH
         </h2>
         <p
-          class="content"
+          class="content para"
           style="font-size: 20px; text-align: justify;"
         >
           Research is a systematic inquiry to describe, explain, predict and
@@ -71,16 +71,16 @@
               class="research-ul"
               style="text-align: justify; padding: 30px; font-size: 20px"
             >
-              <li style="padding: 20px">
+              <li class="para" style="padding: 20px" >
                 Good research follows a systematic approach to capture accurate
                 data. Researchers need to practice ethics and a code of conduct
                 while making observations or drawing conclusions.
               </li>
-              <li style="padding: 20px">
+              <li class="para" style="padding: 20px" >
                 The analysis is based on logical reasoning and involves both
                 inductive and deductive methods.
               </li>
-              <li style="padding: 20px">
+              <li class="para" style="padding: 20px" >
                 Real-time data and knowledge is derived from actual observations
                 in natural settings.
               </li>
@@ -120,14 +120,14 @@
           </div>
           <div class="content-section reveal" id="about-why-muacm">
             <br /><br />
-            <p>
+            <p class="para">
               Participation in an undergraduate research experience can benefit
               students in several areas which may include areas beyond
               academics.
             </p>
           </div>
         </div>
-        <!-- 52vw -->
+        
         <div class="UNDERGRADUATES-img" style="width: 25vw; margin: auto; margin-top: -200px;margin-right: 300px; ">
           <img style="height: 40rem;"
           src="../img/Research/RESEARCH FOR UNDERGRADUATES.png"
@@ -141,7 +141,7 @@
         <br />
         <hr />
         <hr />
-        <h2
+        <h2 id="RESEARCH-MUACM-h2"
           class="content reveal"
           style="font-size: 45px;  padding: 40px;padding-bottom: 0px;text-align: center; font-family: cursive"
         >
@@ -157,7 +157,7 @@
           </div>
           <div class="content-section reveal" id="about-why-muacm">
             <br /><br />
-            <p style="font-size: 20px; text-align: justify; margin-top: -30px">
+            <p class="para" style="font-size: 20px; text-align: justify; margin-top: -30px">
               Burgeoning the research potential of Medi-Caps University is a
               primary goal behind this initiative. Having been ebullient in
               technology and student interaction, MUACM is now targeting to
@@ -180,7 +180,7 @@
 
         <!-- Starting of Benefits of Research@MUACM-->
 
-        <h2
+        <h2 id="Benefits-h2"
           class="content reveal"
           style="
             font-size: 40px;
@@ -192,7 +192,7 @@
           Benefits of Research@MUACM
         </h2>
         <!-- Timeline -->
-        <div class="timeline ">
+         <div class="timeline "> 
           <div class="container left ">
             <i class="icon fa fa-gift"></i>
             <div class="contents reveal">
@@ -258,7 +258,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> 
         <!--
         <div class="content-section" id="about-muacm">
           <ul
@@ -328,7 +328,7 @@
         </div>-->
 
         <!-- TECHNOLOGIES -->
-        <div class="content-section reveal" id="about-mu">
+         <div class="content-section reveal" id="about-mu"> 
           <br /><br />
           <h2
             style="
@@ -537,7 +537,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> 
 
         <!-- Perks -->
         <div class="content-section" id="about-why-muacm">
@@ -657,7 +657,7 @@
                 class="perk-img-png reveal"
                 src="/img/Research/perks/learning.png"
                 alt=""
-                style="margin-bottom:-80px"
+                style="margin-bottom:20px"
               />
             </div>
             <div>
@@ -729,5 +729,15 @@
         }
       }
     </script>
+    <!-- Navbar Script -->
+    <script>
+      let mainNav = document.getElementById('js-menu');
+      let navBarToggle = document.getElementById('js-navbar-toggle');
+  
+      navBarToggle.addEventListener('click', function () {
+  
+        mainNav.classList.toggle('active');
+      });
+  </script>  
   </body>
 </html>
