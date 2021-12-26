@@ -120,7 +120,10 @@
   text-align: center;
   opacity: 1;
   transition: 0.3s;
-  
+}
+
+.card > .content > h3{
+  margin-top: 15px;
 }
 
 /* PERKS */
@@ -129,6 +132,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 80px;
 }
 
 .perk-img{
@@ -141,7 +145,8 @@
 
 .p-1{
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 /* Scrolling effect*/
@@ -168,7 +173,6 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
 }
 
 .timeline {
@@ -321,6 +325,12 @@ body {
   #research-img img,#profile-img img{
       margin-top: 15px !important;
   }
+  .UNDERGRADUATES-img
+  {
+    margin-top: 0px !important;
+    margin-right: 250px !important;
+    width: 40vw !important;
+  }
 }
 
 
@@ -398,8 +408,14 @@ body {
   #profile-img img{
     padding-left: 0px !important;
   }
-    .container {
-      padding-left: 100px;
-    }
+  .container {
+    padding-left: 100px;
+  }
+  .UNDERGRADUATES-img{
+    width: 40vw !important;
+  }
+  .UNDERGRADUATES-img img{
+    height: 30rem !important;
+  }
 }
 
