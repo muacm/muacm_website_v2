@@ -1,4 +1,8 @@
 /* about-muacm */
+body{
+  font-family: "Montserrat", sans-serif !important;
+}
+
 #about-muacm ul {
     font-family: "Montserrat", sans-serif;
     padding: 40px;
@@ -21,11 +25,9 @@
 }
 #about-why-muacm p
 {
-  
-  font-size: 20px;
+   font-size: 20px;
   text-align: justify;
   margin-top: 20px;
-  font-family: Lucida Console, Courier, monospace;
   padding-left: 10rem;
 }
 .research-ul h3{
@@ -49,9 +51,10 @@
     padding: 15px;
     text-align: center;
     cursor: pointer;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: -45px;
+    margin-bottom: 10px;
 }
+
 /* Content-img */
 .content-img{
   margin-top: 80px;
@@ -102,7 +105,7 @@
 .card{
   /* position: relative; */
   width: 380px;
-  height: 490px;
+  height: 530px;
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   border-radius: 15px;
@@ -126,6 +129,12 @@
   margin-top: 15px;
 }
 
+.btn-div{
+  margin: 0px -12px;
+  text-align: justify;
+  padding: 0%;
+}
+
 /* PERKS */
 
 .d-flex{
@@ -145,8 +154,10 @@
 
 .p-1{
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-size: 35px !important;
   margin-bottom: 20px;
+  color: white !important;
+  font-weight: 500 !important;
 }
 
 /* Scrolling effect*/
@@ -415,11 +426,15 @@ body {
     width: 40vw !important;
   }
   .UNDERGRADUATES-img img{
+    margin-left: -77px;
+    margin-top: -47px;
+    margin-bottom: -4px;
     height: 30rem !important;
   }
   .para{
     width: 400px;
     margin: auto;
+    font-family: "Montserrat", sans-serif;
   }
   #RESEARCH-MUACM-h2,#Benefits-h2{
     font-size: 32px !important;
@@ -448,6 +463,13 @@ body {
   .footer {
     width: 108vw;
   }
+
+  .navbar-toggle {
+    right: 55px;
+}
+.join-btn{
+  margin-top: 40px;
+}
 }
 
 
