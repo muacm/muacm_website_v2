@@ -131,7 +131,7 @@ body{
 
 .btn-div{
   margin: 0px -12px;
-  text-align: justify;
+  text-align: justify !important;
   padding: 0%;
 }
 
