@@ -19,6 +19,15 @@
     justify-content: center;
     text-align: left;
 }
+#about-why-muacm p
+{
+  
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: Lucida Console, Courier, monospace;
+  padding-left: 10rem;
+}
 .research-ul h3{
     padding: 10px 0px;
 }
@@ -279,6 +288,58 @@ body {
   color: #000000;
 }
 
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  #about-research{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #Research-MUACM{
+    display: grid;
+    grid-template-columns: auto;
+  
+  }
+  .d-flex{
+    flex-direction: column;
+  }
+  .even{
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #card-contain{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #about-why-muacm p{
+    padding-left: 0px;
+  }
+  #research-img,#profile-img{
+    margin: auto;
+  }
+  #research-img img,#profile-img img{
+      margin-top: 15px !important;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  #card-contain{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #card-contain .card{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container.left {
+    left:0%;
+  }
+}
+
+
 @media (max-width: 767.98px) {
   .timeline::after {
     left: 90px;
@@ -322,5 +383,23 @@ body {
     padding: 30px 30px 30px 90px;
     border-radius: 500px 0 0 500px;
   }
+}
+
+@media screen and (max-width: 600px){
+  #profile-img img{
+    width: 90vw;
+  }
+  #research-img img{
+    width: 90vw;
+  }
+  #about-why-muacm p{
+    padding-left: 2rem;
+  }
+  #profile-img img{
+    padding-left: 0px !important;
+  }
+    .container {
+      padding-left: 100px;
+    }
 }
 
