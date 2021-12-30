@@ -48,6 +48,8 @@ body{
 .join-btn{
     width: 270px;
     margin: auto;
+    text-decoration: none;
+    display:block;
     padding: 15px;
     text-align: center;
     cursor: pointer;
