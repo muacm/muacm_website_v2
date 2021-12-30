@@ -28,7 +28,7 @@ body{
    font-size: 20px;
   text-align: justify;
   margin-top: 20px;
-  padding-left: 10rem;
+  padding-left: 6rem;
 }
 .research-ul h3{
     padding: 10px 0px;
@@ -54,6 +54,7 @@ body{
   margin-top: -45px;
   margin-bottom: 10px;
   margin-left: 32rem;
+
 }
 
 /* Content-img */
@@ -305,6 +306,15 @@ body {
 }
 
 
+/* iframe */
+.about-acm-youtube iframe {
+  width: 600px;
+  height: 430px;
+  /* margin-bottom: 30px; */
+  margin: auto;
+  margin-top: 60px;
+}
+
 /* Responsive */
 @media screen and (max-width: 1200px) {
   #about-research{
@@ -467,10 +477,15 @@ body {
 
   .navbar-toggle {
     right: 55px;
-}
-.join-btn{
+  }
+  .join-btn{
   margin-top: 40px;
+  }
+  .about-acm-youtube iframe {
+    width: 350px;
+    margin-left: 60px; 
+  }
 }
-}
+
 
 
