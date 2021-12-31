@@ -1,0 +1,493 @@
+/* about-muacm */
+body{
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#about-muacm ul {
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.733);
+    padding-top: 0px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+  }
+
+  /* about-why-muacm */
+#about-why-muacm ul{
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.733);
+    padding-top: 0px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: left;
+}
+#about-why-muacm p
+{
+   font-size: 20px;
+  text-align: justify;
+  margin-top: 20px;
+  padding-left: 6rem;
+}
+.research-ul h3{
+    padding: 10px 0px;
+}
+.research-ul {
+    list-style: none; 
+  }
+.research-ul li:before{
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: rgb(22, 169, 228); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+/* joinUs-btn */
+.join-btn{
+  width: 270px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+display: block;
+
+}
+
+/* Content-img */
+.content-img{
+  margin-top: 80px;
+}
+
+/*  about-research*/
+#about-research{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* Research-for-undergraduate */
+#Research-for-undergraduate
+{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#research-img{
+  margin-top: 55px;
+}
+
+/* Career-Benefits */
+#Career-Benefits{
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+/* Research@MUACM */
+#Research-MUACM{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+/* profile-img */
+#profile-img{
+  /* width: 400px; */
+  margin-top: 90px;
+}
+
+/* box */
+#card-contain{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* card */
+.card{
+  /* position: relative; */
+  width: 380px;
+  height: 530px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  /* backdrop-filter:blur(4px); */
+}
+.card .content{
+  /* padding: 10px; */
+  text-align: center;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.card > .content > h3{
+  margin-top: 15px;
+}
+
+.btn-div{
+  margin: 0px -12px;
+  text-align: justify !important;
+  padding: 0%;
+}
+
+/* PERKS */
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.perk-img{
+  width: 22rem;
+}
+
+.perk-img-png{
+  width: 14rem;
+}
+
+.p-1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px !important;
+  margin-bottom: 20px;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+/* Scrolling effect*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Benefits @muacm timeline */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #F50057;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  right: 25%;
+}
+
+.container.right {
+  left: 25%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #F50057;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #F50057;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #F6D155;
+  border: 2px solid #F50057;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006E51;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .contents {
+  padding: 30px 90px 30px 30px;
+  background: #F6D155;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .contents {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .contents h2 {
+  margin: 0px 0 0px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+}
+
+.container .contents p {
+  margin: -10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+
+/* iframe */
+.about-acm-youtube iframe {
+  width: 600px;
+  height: 430px;
+  /* margin-bottom: 30px; */
+  margin: auto;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  #about-research{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #Research-MUACM{
+    display: grid;
+    grid-template-columns: auto;
+  
+  }
+  .d-flex{
+    flex-direction: column;
+  }
+  .even{
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #card-contain{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #about-why-muacm p{
+    padding-left: 0px;
+  }
+  #research-img,#profile-img{
+    margin: auto;
+  }
+  #research-img img,#profile-img img{
+      margin-top: 15px !important;
+  }
+  .UNDERGRADUATES-img
+  {
+    margin-top: 0px !important;
+    margin-right: 250px !important;
+    width: 40vw !important;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  #card-contain{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #card-contain .card{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container.left {
+    left:0%;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .contents,
+  .container.right .contents {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  body{
+    width: 100%;
+  }
+  #profile-img img{
+    width: 90vw;
+  }
+  #research-img img{
+    width: 90vw;
+  }
+  #about-why-muacm p{
+    padding-left: 2rem;
+  }
+  #profile-img img{
+    padding-left: 0px !important;
+  }
+  .container {
+    padding-left: 100px;
+  }
+  .UNDERGRADUATES-img{
+    width: 40vw !important;
+  }
+  .UNDERGRADUATES-img img{
+    margin-left: -77px;
+    margin-top: -47px;
+    margin-bottom: -4px;
+    height: 30rem !important;
+  }
+  .para{
+    width: 400px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+  }
+  #RESEARCH-MUACM-h2,#Benefits-h2{
+    font-size: 32px !important;
+  }
+  .research-ul li{
+    width: 344px !important;
+  }
+  .d-flex div p{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 344px !important;
+    margin: auto !important;
+    text-align: center !important;
+  }
+  .container.right .contents {
+    padding: 30px 30px 30px 90px;
+    border-radius: 200px 0 0 200px;
+  }
+  .container.left .contents{
+    border-radius: 200px 0 0 200px;
+
+  }
+  #card-contain .card {
+    width: 350px;
+  }
+  .footer {
+    width: 108vw;
+  }
+
+  .navbar-toggle {
+    right: 50px;
+  }
+  .join-btn{
+  margin-top: 40px;
+  }
+  .about-acm-youtube iframe {
+    width: 350px;
+    margin-left: 60px; 
+    height: 250px;
+  }
+}
+
+
+
