@@ -209,11 +209,12 @@ label {
   width: 100px;
 }
 .brochure {
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   margin-top: 15px;
 }
  .brochure-btn{
-   margin: 0;
+   margin: auto;
+   display: block;
    top: 0;
 } 
 #bro {
@@ -234,7 +235,6 @@ label {
   padding: 10px;
   font-size: 22px;
   font-weight: 400;
-
 }
 #broo:hover {
   box-sizing: border-box;
@@ -246,6 +246,11 @@ label {
   /* text-align: center; */
  text-align: center;
   padding-top: 30px;
+  padding-bottom: -500px;
+  display:block;
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
 }
 /* html, body {
     width: 100%;
@@ -314,7 +319,9 @@ label {
     /* display: none; */
   }
   #broo{
-    margin-left: 18%;
+    /* margin-left: 18%; */
+    margin: auto 100px;
+    display: block;
   }
   .img3 {
     padding-right: 30px;
