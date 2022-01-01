@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="/css/navbar.css" />
   <link rel="stylesheet" href="/css/particle.css" />
   <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/carousel.css">    <!--carousel addiotion-->
   <link rel = "icon" href = "../img/logos/MuACMlogo.ico" type = "image/x-icon">
   <script src="https://kit.fontawesome.com/ff6e598646.js" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
@@ -354,7 +355,56 @@
       </div>
 
     </div>
-    
+
+<!-- Carousel Starts Here  -->
+  <span style="font-size: 1.2em; margin-top: 10px; margin-bottom: 20px;">------EVENTS GALLERY------</span>
+  <div class="document-center">
+    <!--This carousel-container only exists so we can do the 
+    aspect ratio tricks in CSS-->
+    <div class="left-arrow">
+      <span class="chevron left"></span>
+    </div>
+    <div class="right-arrow">
+      <span class="chevron right"></span>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel" id="carousel-1" auto-scroll="7000">
+        <!--The uppermost screen will appear first. This is due to JavaScript-->
+        <section class="carousel-screen">
+          <img src="https://i.ibb.co/qWQVZ2K/img1.jpg" alt="event-img" />
+          <section class="text-container">
+            <p>Heading text 1 </p>
+            <p>Lorem ipsum dolor sit amet </p>
+          </section>
+        </section>
+        <section class="carousel-screen">
+          <img src="https://i.ibb.co/CMTfjG7/img2.jpg" alt="event-img" />
+          <section class="text-container">
+            <p>Heading text 2</p>
+            <p>Lorem ipsum dolor sit amet </p>
+          </section>
+        </section>
+        <section class="carousel-screen">
+          <img src="https://i.ibb.co/sPzVTXW/img3.png" alt="event-img" />
+          <section class="text-container">
+            <p>Heading text 3</p>
+            <p>Lorem ipsum dolor sit amet</p>
+          </section>
+        </section>
+        <!--These are not screens. They will always be on carousel-->
+        <section class="circle-container">
+          <!--These 'circles' need to match the number of carousel screens-->
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/carousel.js"></script>
+<!-- Carousal Ends Here-->   
 
 <!-- FOOTER  -->
 
