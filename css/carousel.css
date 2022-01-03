@@ -36,11 +36,20 @@ in order for the aspect ratio trick to work*/
   height: 100%;
 }
 
-@media screen and (max-width: 580px) {
-  .left-arrow{
-    width: 10px;
+@media screen and (max-width: 880px) {
+  .left-arrow , .right-arrow{
+    width: 90px !important;
   }
-  
+  .chevron{
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .text-container p{
+    
+    padding:0px;
+    margin: 0px !important; 
+  }
 }
 
 .left-arrow {
@@ -139,7 +148,7 @@ in order for the aspect ratio trick to work*/
 
 .text-container p:nth-child(1) {
   margin: 10px 100px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
  
 }
 
