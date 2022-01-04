@@ -239,6 +239,7 @@ label {
 #broo:hover {
   box-sizing: border-box;
   color: #e7a84b;
+  border-color: white;
 }
 
 .refund {
@@ -249,8 +250,7 @@ label {
   padding-bottom: -500px;
   display:block;
   position: relative;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 /* html, body {
     width: 100%;
@@ -286,6 +286,7 @@ label {
   transform: translateY(0px);
   opacity: 1;
 }
+
 @media screen and (max-width: 1000px) {
   .abt1 {
     margin-top: -21%;
@@ -332,6 +333,11 @@ label {
     margin-left: 15%;
     padding-right: 0px;
     margin-bottom: 25px;
+  }
+  .brochure-btn{
+    margin: -2rem auto !important;
+    display: block !important;
+    top: 0 !important;
   }
 }
 
