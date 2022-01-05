@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/css/particle.css" />
   <link rel="stylesheet" href="/css/footer.css" />
   <link rel="stylesheet" href="/css/carousel.css">    <!--carousel addiotion-->
+  <link rel="stylesheet" href="/css/animation.css" />
   <link rel = "icon" href = "../img/logos/MuACMlogo.ico" type = "image/x-icon">
   <script src="https://kit.fontawesome.com/ff6e598646.js" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
@@ -51,22 +52,25 @@
     </ul>
   </nav>
 
-<!-- Particle-->
-<!--<div class="particles">
-  <canvas></canvas>
-  <div class="input">
-    <input type="text" id="updateText" placeholder="type your word">
-    <button id="updateButton"></button>
-  </div>
-</div>
-<script src="/js/particle.js"></script>
-<script src="/js/main.js"></script> 
- <div id="main"></div> -->
-
- <div class="sign">
+ <!-- <div class="sign">
       <span class="fast-flicker">M</span>U<span class="flicker">A</span>CM
-    </div>
+    </div> -->
 
+    <div class="anim-cont" style="height: 200px;">
+      <div class="wrapper">
+        <div class="anim-area">
+          <div class="anim front-anim"></div>
+          <div class="anim front-middle-anim"></div>
+          <div class="anim right-anim"></div>
+          <div class="anim back-middle-anim"></div>
+          <div class="anim back-anim"></div>
+          <div class="anim left-anim"></div>
+          <div class="anim top-anim"></div>
+          <div class="anim bottom-anim"></div>
+        </div>
+      </div>
+
+    </div>
 
 <!-- About Section-->
   <section id="home">
@@ -105,7 +109,7 @@
     <div class="content-section" id="about-acm">
       <div>
         <p class="content reveal" style='font-size:20px;  text-align:justify'>
-          The ACM (Association for Computing Machinery) is a 74-year-old international scientific and industrial computing society. Through its many Special Interest Groups, the ACM fosters research and communication in a broad range of computing areas. The society has around 100,000, spread over 174 countries leading to interaction between diversified computing enthusiasts. ACM provides us with one of the most enriching digital libraries which consists of various research papers. This leads us to availability of critical content being easily accessible. ACM strengthens the computing profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM leads us to the pathway following which, in the near future, world’s biggest problems will be solved using computing.
+          The ACM (Association for Computing Machinery) is a 74-year-old international scientific and industrial computing society. Through its many Special Interest Groups, the ACM fosters research and communication in a broad range of computing areas. The society has around 100,000, spread over 174 countries leading to interaction between diversified computing enthusiasts. ACM provides us with one of the most enriching digital libraries which consists of various research papers. This leads us to availability of critical content being easily accessible. ACM strengthens the computing profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM leads us to the pathway following which, in the near future, world's biggest problems will be solved using computing.
         </p>
       </div>
       <div class="about-acm-youtube reveal">
@@ -129,7 +133,7 @@
       <div class="content-section reveal" id="about-why-muacm">
         <h2 style='font-size:35px;  margin-top:30px'>Why Connect with ACM</h2>
         <p className="content" style='font-size:20px;  text-align:justify;'>
-          Anybody who believes that as a professional you want to be the best and take the world’s computing skills to another magical level, then ACM is what speaks to that aspiration. Apart from the numerous benefits that we receive such as an excellent access to the digital library, ACM considers itself a family where you will feel like you belong, the community believes in the growth and prosperity of its members and finding solutions to world problems using technical knowledge. When you become a member, you become a part of the dynamic changes that are transforming our world. ACM provides the tools and resources to help get you there, by advancing your career and enriching your knowledge with life-long learning resources. ACM being a reputed organisation in the industry leads to higher recognition when it is mentioned on a student’s resume especially if you are a part of various competitions and events being conducted throughout the year. Being a part of this community is an honour in itself and definitely leads to your personal and professional growth.
+          Anybody who believes that as a professional you want to be the best and take the world's computing skills to another magical level, then ACM is what speaks to that aspiration. Apart from the numerous benefits that we receive such as an excellent access to the digital library, ACM considers itself a family where you will feel like you belong, the community believes in the growth and prosperity of its members and finding solutions to world problems using technical knowledge. When you become a member, you become a part of the dynamic changes that are transforming our world. ACM provides the tools and resources to help get you there, by advancing your career and enriching your knowledge with life-long learning resources. ACM being a reputed organisation in the industry leads to higher recognition when it is mentioned on a student's resume especially if you are a part of various competitions and events being conducted throughout the year. Being a part of this community is an honour in itself and definitely leads to your personal and professional growth.
         </p>
        
       </div>
@@ -314,11 +318,11 @@
           <h3>Wev Dev Bootcamp</h3>
           <p>
             The following topics were taught:<br><br>
-            Day 1 – HTML <br>
+            Day 1 - HTML <br>
             Day 2 - CSS <br>
             Day 3 - Bootstrap <br>
-            Day 4 – JavaScript<br>
-            Day 5 – JavaScript<br>
+            Day 4 - JavaScript<br>
+            Day 5 - JavaScript<br>
             Day 6 - ReactJS <br>
             Day 7 - ReactJS <br>
             Day 8 - ReactJS <br>
