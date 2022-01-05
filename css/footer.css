@@ -14,7 +14,7 @@
 .footer {
   background-color: black;
   width: 100%;
-  /* margin-top: 50px;           -   when added corousel it creates extra space */       
+  margin-top: 50px;                 
   padding: 30px 0;
   /* height: 250px; */
 }
