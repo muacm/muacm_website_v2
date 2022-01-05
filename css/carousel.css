@@ -1,0 +1,241 @@
+.document-center {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px ;
+  position: relative;
+}
+
+/*We do this because the carousel needs to be 100% width 
+in order for the aspect ratio trick to work*/
+.carousel-container {
+  max-width: 980px;
+  width: 65%;
+}
+
+/*This is the actual carousel. Overflow hidden acts as a mask*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  /*Width of image is 980px. Height is 570px.*/
+  padding-top: calc(570 / 980 * 100%);
+  overflow: hidden;
+}
+
+.carousel-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+              /*   Media Queries  */
+@media screen and (max-width: 768px) {
+
+  .left-arrow svg,
+  .right-arrow svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .left-arrow , .right-arrow{
+    width: 12.5% !important;
+  }
+
+  .carousel-container{
+    width: 75%;
+  }
+  
+  .text-container p{ 
+    margin: 0px !important; 
+    font-size: 1rem !important;
+    padding-left: 20px !important;
+  }
+
+  .circle{
+    height: 9px !important;
+    width: 9px !important;
+  }
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+  .carousel-container{
+    width: 75%;
+  }
+
+  .text-container p{
+    margin: 0px !important; 
+    font-size: 0.8rem !important;
+    padding-left: 20px !important;
+  }
+
+  .circle{
+    height: 8px !important;
+    width: 8px !important;
+  }
+}
+
+          /* Media Queries Ends  */
+
+.left-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 17.5%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow:hover {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.left-arrow:hover svg,
+.right-arrow:hover svg {
+  fill: #e6e6e6;
+}
+
+
+
+.right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 17.5%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.right-arrow:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+/* .chevron {
+  width: 25px;
+  height: 25px;
+  border: solid rgba(255, 255, 255, 0.5);
+  border-width: 10px 10px 0 0;
+}
+
+.chevron.right {
+  transform: rotate(45deg);
+}
+
+.chevron.left {
+  transform: rotate(-135deg);
+} */
+
+
+
+.circle-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+}
+
+.circle {
+  border: 1px solid white;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.circle-fill {
+  background-color: white;
+}
+
+.text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+  background-image: linear-gradient(to right ,rgba(1,1,1,1) , rgba(1,1,1,0));
+  padding: 0px !important;
+  
+}
+
+.text-container p:nth-child(1) {
+  margin: 10px 10px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Spline Sans', sans-serif !important;
+ 
+}
+
+
+.carousel-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Animations */
+@keyframes toRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes comeRight {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes comeLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
