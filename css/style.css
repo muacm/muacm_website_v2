@@ -35,6 +35,7 @@ body {
   height: 35%;
   justify-content: center;
   align-items: center;
+  margin-bottom: -5rem;
 }
 
 /* #home::before {
@@ -58,8 +59,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   line-height: 1.3em;
-  /* padding-top: 30rem; */
-  padding-top: 500px;
+  padding-top: 15rem;
+  /* padding-top: 500px; */
 }
 #home > .social{
   display: flex;
@@ -116,7 +117,6 @@ div[class*="box"] {
   justify-content: center;
   align-items: center;
   background: #1f1f1f;
-  
 
   /* background-color: #1e1e1e; */
 /* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
