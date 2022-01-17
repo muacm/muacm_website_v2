@@ -285,9 +285,25 @@ div[class*="box"] {
     }
     #home > .social{
       text-align: center;
+        display: grid; 
       grid-template-columns: auto;
     }
 }
+
+@media screen and (min-width: 1000px){
+  #home > .social {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+}
+
+/* @media screen and (max-width: 2000px){
+  .sign{
+    top:18%;
+  }
+} */
+
 @media screen and (max-width: 980px) {
   .container{
     display: grid;
@@ -296,6 +312,14 @@ div[class*="box"] {
   .about-acm-youtube iframe{
     width: 80vw;
   }
+  .popup .popuptext {
+    bottom: 94% !important;
+  }
+  .popup_img{
+    width: 70vw !important;
+  }
+  
+
 }
 @media screen and (max-width: 500px) {
   #home h1{
@@ -311,4 +335,60 @@ div[class*="box"] {
   #main{
     display: none;
   }
+  .popup .popuptext {
+    bottom: 94% !important;
+  }
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 94%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
