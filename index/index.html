@@ -93,9 +93,13 @@
   <section id="about">
 
     <!-- Journal of MUACM-->
-    <h1 style="font-size:35px; margin-bottom:2rem">Journal</h1>
-    <a href="https://online.flippingbook.com/view/776175463/" class="fbo-embed" data-fbo-id="776175463" data-fbo-ratio="16:9" data-fbo-lightbox="yes" data-fbo-width="80%" data-fbo-height="auto" data-fbo-version="1" style="max-width: 80%">neural networks</a><script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=776175463"></script>
+    <h1 style="font-size:35px; margin-bottom:20px">Journal</h1>
+    
 
+    <!-- popup -->
+    <div class="popup" onclick="myFunction()"><img style="width:60vw" src="../img/carousel/img1.jpg" alt="">
+      <span class="popuptext" id="myPopup"><a href="https://online.flippingbook.com/view/776175463/" class="fbo-embed" data-fbo-id="776175463" data-fbo-ratio="16:9" data-fbo-lightbox="yes" data-fbo-width="80%" data-fbo-height="auto" data-fbo-version="1" style="max-width: 80%">neural networks</a><script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=776175463"></script></span>
+    </div>
 
     <!-- Starting the about MU content  -->
     <br /><br /><br /><br /><br /><br />
@@ -535,6 +539,14 @@
   agent-id="4907c2af-4153-42db-832a-d6f3fd52dd40"
   language-code="en"
 ></df-messenger>
+
+<script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
 </body>
 
 </html>
