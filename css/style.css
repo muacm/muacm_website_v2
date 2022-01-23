@@ -38,17 +38,6 @@ body {
   margin-bottom: -5rem;
 }
 
-/* #home::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.9;
-} */
-
 #home h1 {
   color: rgba(255, 255, 255, 0.938);
   font-size: 50px;
@@ -60,7 +49,6 @@ body {
   letter-spacing: 1.5px;
   line-height: 1.3em;
   padding-top: 15rem;
-  /* padding-top: 500px; */
 }
 #home > .social{
   display: flex;
@@ -85,17 +73,10 @@ div[class*="box"] {
 
 .btn {
   padding: 18px 22px;
-  /* color: black; */
-  /* background-color: white; */
-  /* outline: none; */
-  /* border-radius: 28px; */
   font-weight: 700;
   font-size: 22px;
   
   background: rgba(255, 255, 255, 0.3);
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-  /* backdrop-filter: blur( 13px ); */
-  /* -webkit-backdrop-filter: blur( 13px ); */
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -107,6 +88,73 @@ div[class*="box"] {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+
+/* Card popup */
+a{
+	outline: 0;
+	text-decoration: none;
+}
+.modal-bg{
+	position:fixed;
+	left:0;right:0;
+	top:0;bottom:0;
+	z-index:100;
+	background-color:rgba(50,50,50,0.5);
+}
+
+.button_pop{
+	padding: 8px 12px;
+	margin-top: 15px;
+	background: #FABD29;
+	border: none;
+	color: black;
+	font-weight: 600;
+	border-radius: 3px;
+	cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+.button_pop:hover{
+	background-color: #5DC3A7;
+}
+#modal{ 
+	position:absolute;
+	background-color:#353945;
+	background-color:#33485D;
+	top:50%; 
+	left:50%;
+	z-index:101;
+	border-radius:5px;
+	width:360px;
+	height:310px;
+	margin-top:-130px;
+	margin-left:-170px;
+	border-bottom: 4px solid #5DC3A7;
+	box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+#modal span{
+	display: block;
+	background: #353945;
+	padding: 10px;
+	color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+#close{
+	float: right;
+	color: #fff;
+  margin-top:-4px;
+	font-family: serif;
+	font-size: 20px;
+}
+#close:hover{
+	color:gray;
+}
+
+
 /* *****ABOUT***** */
 
 #about {

@@ -9,6 +9,26 @@
     margin: 10px 25px;
   }
 
+/* Dropdwon */
+.drop{
+  text-decoration: none;
+  list-style: none;
+}
+nav ul ul{
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+nav ul li:hover > ul{
+  display: block;
+  background-color: black;
+}
+nav ul ul li{
+  width: 150px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
 
   #navbar {
     position: fixed;
@@ -40,6 +60,7 @@
   
   #navbar ul li a::after {
     content: "";
+    text-decoration: none;
     position: absolute;
     bottom: -12px;
     width: 0%;
@@ -52,6 +73,7 @@
   #navbar ul li a:hover::after {
     left: 0;
     width: 100%;
+    
   }  
 
 .main-nav {
@@ -102,3 +124,18 @@
       display: none;
   }
 }
+
+@media screen and (max-width: 977px){
+  
+  nav ul li:hover > ul {
+    display: contents;
+    background-color: black;
+}
+}
+/* nav ul ul li {
+  width: 164px;
+  float: right;
+  display: block;
+  position: relative;
+  padding: 5rem;
+} */
