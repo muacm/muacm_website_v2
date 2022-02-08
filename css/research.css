@@ -490,4 +490,29 @@ body {
 }
 
 
+/* Event */
+#events p{
+  padding: 28px;
+}
 
+.eventbtn-div{
+    margin: 23px 1.5em;    
+    align-items: center;
+}
+
+.eventbtn-event{
+  border-radius: 5px;
+  font-weight: 650;
+  text-decoration: none;
+  padding: 10px 50px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color:#E81224;
+}
+.eventbtn-event:hover{
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: black;
+} 

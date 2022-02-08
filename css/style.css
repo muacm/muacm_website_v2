@@ -221,7 +221,6 @@ a{
   color: white;
   justify-content: center;
   font-weight: 600;
-
 }
 
 #events p {
@@ -240,7 +239,6 @@ a{
   display: grid;
   grid-template-columns: auto auto auto;
   margin: auto;
-  
 }
 
 .container .card{
