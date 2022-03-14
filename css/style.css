@@ -90,6 +90,56 @@ div[class*="box"] {
 }
 
 
+/* Counter */
+
+.counter-body {
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.fa-instagram{
+  color: #CC3D89;
+}
+.fa-discord{
+  color: #5562EA;
+}
+.fa-youtube{
+  color: #f60000;
+}
+.fa-linkedin{
+  color: #0077B5;
+}
+.fa-github{
+  color: #1B1F23;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+
 /* Card popup */
 a{
 	outline: 0;

@@ -30,6 +30,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -110,10 +112,33 @@
           style="max-width: 80%">MUACM JOURNAL</a>
         <script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=1066718097"></script>
 
-
       </span>
     </div>
 
+
+    <!-- Counter -->
+    <div class="counter-body">
+      <div class="counter-container">
+        <i class="fab fa-discord fa-6x"></i>
+        <div class="counter" data-target="1250"></div>
+        <span>Discord Members</span>
+      </div>
+      <div class="counter-container">
+        <i class="fab fa-instagram fa-6x"></i>
+        <div class="counter" data-target="600"></div>
+        <span>Instagram Followers</span>
+      </div>
+      <div class="counter-container">
+        <i class="fab fa-youtube fa-6x"></i>
+        <div class="counter" data-target="120"></div>
+        <span>YouTube Subscribers</span>
+      </div>
+      <div class="counter-container">
+        <i class="fab fa-linkedin fa-6x"></i>
+        <div class="counter" data-target="670"></div>
+        <span>LinkedIn Connections</span>
+      </div> 
+    </div>
 
     <!-- Starting the about MU content  -->
     <br /><br /><br /><br /><br /><br />
@@ -157,7 +182,7 @@
 
       <!-- Starting the about ACM-MU Chapter content -->
       <br>
-      <div class="content-section reveal" id="about-mu">
+      <!-- <div class="content-section reveal" id="about-mu">
         <h2 style='font-size:35px; '>About Medi-Caps University</h2>
         <p className="content" style='font-size:20px;  text-align:justify'>
 
@@ -167,9 +192,9 @@
           brilliance and industry exposure, supplemented by highly specialized visiting faculty and industry experts,
           senior professionals from various segments of different industries and business houses.
         </p>
-      </div>
+      </div> -->
       <!-- Starting the about Why connect? content -->
-      <div class="content-section reveal" id="about-why-muacm">
+      <!-- <div class="content-section reveal" id="about-why-muacm">
         <h2 style='font-size:35px;  margin-top:30px'>Why Connect with ACM</h2>
         <p className="content" style='font-size:20px;  text-align:justify;'>
           Anybody who believes that as a professional you want to be the best and take the world's computing skills to
@@ -184,7 +209,7 @@
           honour in itself and definitely leads to your personal and professional growth.
         </p>
 
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -206,7 +231,7 @@
             The Speaker for the event was <b>Dr. Bastin Robin</b>, India's 20 Most Influential Conversational AI
             Leaders. Along with this, he is the Director of AI and Data Science.<br><br>
 
-            
+
             <b>February 12, 2022</b>
           </p>
           </p>
@@ -566,8 +591,9 @@
             <div class="social-links">
               <a href="https://discord.gg/nRVJca8ecP"><i class="fab fa-discord"></i></a>
               <a href="https://www.instagram.com/mu_acm/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCz-VQsp7L1IcvhViTUtmSFg"><i class="fab fa-youtube"></i></a>
               <a href="https://www.linkedin.com/company/acm-student-chapter-medicaps/"><i
-                  class="fab fa-linkedin-in"></i></a>
+                  class="fab fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -579,7 +605,7 @@
       </div>
     </footer>
 
-
+<!-- vanilla -->
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".card"), {
@@ -605,7 +631,6 @@
   <!-- <script src="/js/script.js"></script> -->
 
   <!-- Scrolling effect-->
-
   <script type="text/javascript">
     window.addEventListener('scroll', reveal);
 
@@ -628,32 +653,26 @@
     }
   </script>
 
-  <!--
+
+<!-- counter -->
 <script>
-    container = document.getElementById("main");
+    const counters = document.querySelectorAll(".counter");
 
-    var text = new Blotter.Text("MUACM", {
-        family: "serif",
-        size: 150,
-        fill: "#41C3FE",
-        paddingLeft: 80,
-        paddingRight: 80,
-        paddingTop: 80,
-        paddingBottom: 0,
-    });
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
 
-    var material = new Blotter.FliesMaterial();
-    material.uniforms.uPointCellWidth.value = 0.01;
-    material.uniforms.uPointRadius.value = 1.5;
-    material.uniforms.uSpeed.value = 10;
-
-    var blotter = new Blotter(material, {
-        texts: text
-    });
-
-    var scope = blotter.forText(text);
-    scope.appendTo(container);
-</script>-->
+</script>
 
   <!--ChatBot -->
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
@@ -669,7 +688,7 @@
       popup.classList.toggle("show");
     }
   </script>
-  z
+
 </body>
 
 </html>
