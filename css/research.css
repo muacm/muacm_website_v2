@@ -27,8 +27,9 @@ body{
 {
    font-size: 20px;
   text-align: justify;
-  margin-top: 20px;
-  padding-left: 6rem;
+  margin-top: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .research-ul h3{
     padding: 10px 0px;
@@ -146,10 +147,12 @@ display: block;
 
 .perk-img{
   width: 22rem;
+  margin: 0px 5rem;
 }
 
 .perk-img-png{
   width: 14rem;
+  margin: 0px 5rem;
 }
 
 .p-1{
@@ -172,6 +175,32 @@ display: block;
   transform: translateY(0px);
   opacity: 1;
 }
+
+.reveal2{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+
 
 /* Benefits @muacm timeline */
 

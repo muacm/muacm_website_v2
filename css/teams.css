@@ -60,7 +60,7 @@ body {
    grid-template-columns: auto auto;
    justify-content: center;
    align-items: center;
-   margin-top: 10em;
+   margin-top: 3em;
 }
 
 .container-council {
@@ -208,7 +208,7 @@ body {
 } */
 
 .sci .fa-linkedin:hover {
-   color: #037ab6;
+   color: #2daff0;
 }
 .sci .fa-instagram:hover{
    color: #a80284bd;

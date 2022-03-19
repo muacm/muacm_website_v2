@@ -72,12 +72,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 50%;
+  width: auto;
+  height: auto;
   transform: translate(-50%, -50%);
   letter-spacing: 2;
   left: 50%;
-  top: 35%;
+  top: 280px;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 9em;

@@ -140,15 +140,10 @@ img {
 #reg {
   scroll-behavior: smooth;
   transition: 0.1ms ease linear;
-
-  /* padding-bottom: 20%; */
+  background-color: #323232;
+  /* background-image: url("https://ik.imagekit.io/3q71ttwh2xv/black-premium-background-with-luxury-dark-luxury-silver-platinum-lines-vector_97010-29_M897uRIH1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647699482810");
+  background-size: 100%; */
 }
-/* .arrow{
-  
-  text-align: left;
-  color: #E7A84B;
-  background-color: none;
-} */
 
 #arrow {
   height: 100px;
@@ -170,11 +165,7 @@ img {
   justify-content: center;
   font-size: 25px;
 }
-/* h3 {
-  text-align: center;
-  color: #e7a84b;
-  font-size: 40px;
-} */
+
 .subb {
   text-align: center;
   margin: 15px 80%;
@@ -252,40 +243,66 @@ label {
   position: relative;
   margin: 20px auto;
 }
-/* html, body {
-    width: 100%;
-    height:100%;
-  }
-  
-  body {
-      background: linear-gradient(-45deg, #1f1f1f, #323231, rgb(82, 81, 80), #323222);
-      background-size: 800% 800% ;
-      animation: gradient 15s ease infinite;
-  
-  }
-  
-  @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  } */
+
+/* scroll effect */
 .reveal {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal2 {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3 {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: all 2s ease;
 }
 
-.reveal.active {
+.reveal3.active {
   transform: translateY(0px);
   opacity: 1;
 }
+
+/* svg animation */
+.abt2{
+  animation:up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform : translateY(40px);
+  }
+  100% {
+    transform :translateY(-40px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform : translateY(40px);
+  }
+  100% {
+    transform :translateY(-40px);
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
   .abt1 {

@@ -53,7 +53,9 @@
     left: 0;
     width: 100%;
   }  
-
+  #navbar ul li a:hover{
+    color: #FFC14F;
+  }
 .main-nav {
     list-style-type: none;
     display: none;

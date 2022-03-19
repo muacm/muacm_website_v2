@@ -35,8 +35,9 @@
       </a>
     </div>
     <ul class="main-nav" id="js-menu">
-      <li class="item"><a class="nav-links" href="./index.html#about">ABOUT</a></li>
-      <li class="item"><a href="./index.html#events">EVENTS</a></li>
+      <!-- <li class="item"><a class="nav-links" href="./index.html#about">ABOUT</a></li> -->
+      <li class="item"><a href="/index/index.html#about">ABOUT</a></li>
+            <li class="item"><a href="/index/events.html">EVENTS</a></li>
       <li class="item"><a href="/index/teams.html">TEAM</a></li>
       <li class="item"><a href="/index/blogs.html">BLOG</a></li>
       <li class="item"><a href="#">PLATINUM MEMBERSHIP</a></li>
@@ -83,18 +84,18 @@
         target="_blank" style="text-decoration:none;">Platinum Members</a>
     </div> -->
   </section>
-  <br></br><br></br><br></br>
+  <br></br><br></br>
 
 
   <!-- Perks -->
   <section class="perk1" id="reg">
-    <div class="con1 reveal">
+    <div class="con1 reveal2">
       <p id="num1">
         <i class="far fa-check-square" id="checkbox"></i>Get yourself
         registered on ACM international community mailing list
       </p>
     </div>
-    <div class="img1 reveal">
+    <div class="img1 reveal2">
       <img src="https://ik.imagekit.io/3q71ttwh2xv/Platinum/images/mailing_Pk4hFSOwg.webp?updatedAt=1640681481340"
         alt="" />
     </div>
@@ -117,40 +118,39 @@
 
 
   <!-- <a href="#cert"><img id="arrow" src="./images/downarrow.webp" alt="" style="margin-top: -30%;"></a>-->
-  <br></br><br></br>
-  <div class="perk3 " id="cert">
-    <div class="con3 reveal">
-      <p id="num3">
+  <br></br><br>
+  <div class="perk3 " id="cert" style="background-color: #323232;">
+    <div class="con3 reveal2">
+      <p id="num3" style="margin-top: 6rem;">
         <i class="far fa-check-square" id="checkbox"></i>Receive platinum
         member certificates
       </p>
     </div>
-    <div class="img3 reveal">
+    <div class="img3 reveal2" style="margin-top: 3rem; margin-bottom: 2.5rem;">
       <img width="280"
         src="https://ik.imagekit.io/3q71ttwh2xv/Platinum/images/certificate-3970850-3286992_b15Un-nSM_9.webp?updatedAt=1640681481671"
         alt="" />
     </div>
-    <br></br><br></br>
   </div>
 
 
   <!-- <a href="#mana"><img id="arrow" src="./images/downarrow.webp" alt="" style="margin-top: -30%;"></a>-->
   <div class="perk4 " id="mana">
-    <div class="img4 reveal">
+    <div class="img4 reveal" style="margin-top: -4rem; margin-bottom: -2rem;">
       <img
         src="https://ik.imagekit.io/3q71ttwh2xv/Platinum/images/work-management-4541065-3773180_J4x2evX5m-.webp?updatedAt=1640681482062"
         alt="" />
     </div>
     <div class="con4 reveal">
-      <p id="num4">
+      <p id="num4" style="margin-top: 5rem;">
         <i class="far fa-check-square" id="checkbox"></i>Get a chance to
         become a part of our organizing committee in future events
       </p>
     </div>
   </div>
-  <div class="brochure reveal">
-    <br></br>
-    <p id="bro" style="font-size:32px; margin-top:-1rem">
+
+  <div class="brochure reveal3">
+    <p id="bro" style="font-size:32px; margin-top:2rem">
       To know more about Platinum Membership, Download the brochure
     </p>
     <br>
@@ -161,8 +161,11 @@
     <div class="refund">The membership amount is non - refundable is any case</div>
   </div>
   </section>
-  <!-- FOOTER  -->
 
+
+
+
+  <!-- FOOTER  -->
   <footer class="footer">
     <div class="containers">
       <div class="row">
@@ -181,6 +184,7 @@
             <a href="https://discord.gg/nb33MJj5vq"><i class="fab fa-discord"></i></a>
             <a href="https://www.instagram.com/mu_acm/"><i class="fa fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/acm-student-chapter-medicaps/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCz-VQsp7L1IcvhViTUtmSFg"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -192,7 +196,6 @@
   </footer>
 
   <!-- Scrolling effect-->
-
   <script type="text/javascript">
     window.addEventListener('scroll', reveal);
 
@@ -214,6 +217,53 @@
       }
     }
   </script>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal2');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        }
+        else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal3');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        }
+        else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+
+
+
 
 </body>
 <script>

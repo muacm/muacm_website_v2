@@ -32,10 +32,12 @@ body {
   display: flex;
   flex-direction: column;
   padding: 200px 10vw;
+  padding-top: 0px;
   height: 35%;
   justify-content: center;
   align-items: center;
   margin-bottom: -5rem;
+  
 }
 
 #home h1 {
@@ -48,7 +50,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   line-height: 1.3em;
-  padding-top: 15rem;
+  padding-top: 4rem;
 }
 #home > .social{
   display: flex;
@@ -59,6 +61,122 @@ body {
   margin: 1.5em 2.5em;
 
 }
+
+
+/* button 2  */
+
+.btn-liquid {
+  display: inline-block;
+  position: relative;
+  width: 240px;
+  height: 60px;
+  border-radius: 27px;
+  color: #fff;
+  font: 700 20px/60px "Droid Sans", sans-serif;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-liquid .inner {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-liquid canvas {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  bottom: -50px;
+  left: -50px;
+  z-index: 0;
+}
+
+
+/* button 3 */
+.bubbly-button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  padding: 1em 2em;
+  font: 700 20px/20px "Droid Sans", sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ff0081;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #e60074;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
 /* BUTTON */
 
 div[class*="box"] {
@@ -67,6 +185,73 @@ div[class*="box"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 65px;
+  border: none;
+  outline: none;
+  font: 700 20px/60px "Droid Sans", sans-serif;
+letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.397);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+  
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.glow-on-hover:hover{
+  color: #fff;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 /* .box-2 { background-color: #3C3C3C; } */
@@ -93,8 +278,8 @@ div[class*="box"] {
 /* Counter */
 
 .counter-body {
-  background-color: black;
-  color: #fff;
+  background-color: #252527;
+  color: rgba(255, 255, 255, 0.233);
   font-family: "Roboto Mono", sans-serif;
   display: flex;
   align-items: center;
@@ -131,6 +316,18 @@ div[class*="box"] {
 }
 .fa-github{
   color: #1B1F23;
+}
+.fa-discord:hover{
+  color: #6773ff
+}
+.fa-instagram:hover{
+  color: #f860b1;
+}
+.fa-youtube:hover{
+  color: #f74747;
+}
+.fa-linkedin:hover{
+  color: #26a0e2;
 }
 
 @media (max-width: 580px) {
@@ -211,11 +408,10 @@ a{
   display: flex;
   flex-direction: column;
   padding: 0px 7vw;
-  height: 35%;
   justify-content: center;
   align-items: center;
   background: #1f1f1f;
-
+  padding-top: 30px;
   /* background-color: #1e1e1e; */
 /* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
 }
@@ -223,12 +419,11 @@ a{
 #about h2 {
   font-family:'Montserrat', sans-serif;
   /* color: rgba(255, 255, 255, 0.938);   */
-  /* color: #1dca7f;  */
-  font-weight: 800;
   color: rgba(255, 255, 255, 0.877);
   justify-content: center;
   font-weight: 700;
   display: flex;
+  letter-spacing: 0.2vh;
 }
 
 #about p {
@@ -292,27 +487,17 @@ a{
 }
 
 .container .card{
-  
-  /* position: relative;  */
   width: 380px;
   /* height: 400px; */
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   border-radius: 18px;
-  /* background: rgba(255, 255, 255, 0.1); */
   background: rgba(255, 255, 255, 0.075);
-  /* overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   border-top: 2px solid rgba(199, 188, 188, 0.1);
   border-left: 2px solid rgba(255, 255, 255, 0.1);
-  /* backdrop-filter:blur(4px); */
-  
 }
 
 .container .card .content{
-  /* padding: 10px; */
   text-align: center;
   opacity: 1;
   transition: 0.3s;
@@ -321,7 +506,7 @@ a{
 
 .card > .content > h3{
   margin-top: 1em;
-  color: #ffbf42;
+  color: #F9B234;
   font-weight: 600;
   font-family:'Montserrat', sans-serif;
   font-size: 28px;
@@ -335,9 +520,6 @@ a{
   font-weight: 650;
   text-decoration: none;
   padding: 10px 50px;
-  /* margin:20px;
-  margin-top: 50px; */
-  /* width: 10vw; */
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.205);
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -350,7 +532,105 @@ a{
   color: black;
 }
 
+/* View morw button */
+.view_btn {
+  font-family: "Mukta", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  
+  /* background: #f3f8fa; */
+}
 
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circles {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circles .icons {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circles .icons.arrows {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circles .icons.arrows::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circles {
+  width: 100%;
+}
+button:hover .circles .icons.arrows {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+
+#container_btn {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
 
 /* Scrolling effect*/
 .reveal{
@@ -412,7 +692,7 @@ a{
     bottom: 94% !important;
   }
   .popup_img{
-    width: 70vw !important;
+    width: 10vw;
   }
   
 
@@ -433,6 +713,9 @@ a{
   }
   .popup .popuptext {
     bottom: 94% !important;
+  }
+  .popup_img{
+    width: 10vw;
   }
 }
 
