@@ -16,8 +16,31 @@ body {
   width: 100%; 
   background: #1f1f1f;
   font-family: "Montserrat", sans-serif !important;
-
+  background-image: url("https://ik.imagekit.io/3q71ttwh2xv/pngtree-black-texture-background-promotion-main-map-image_153112_bRsdnRgk-.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1648051521043");
+  background-size: 100%;
   /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+}
+
+/* svg animation */
+.abt{
+  animation:up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform : translateY(20px);
+  }
+  100% {
+    transform :translateY(-20px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform : translateY(20px);
+  }
+  100% {
+    transform :translateY(-20px);
+  }
 }
 
 /*** Blogs Section ***/

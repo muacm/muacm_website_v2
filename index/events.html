@@ -38,7 +38,7 @@
             <li class="item"><a href="/index/index.html#about">ABOUT</a></li>
             <li class="item"><a href="/index/events.html">EVENTS</a></li>
             <li class="item"><a href="/index/teams.html">TEAM</a></li>
-            <li class="item"><a href="/index/blogs.html">BLOG</a></li>
+            <li class="item"><a href="/index/blogs.html">BLOGS</a></li>
             <li class="item"><a href="/index/platinum.html">PLATINUM MEMBERSHIP</a></li>
             <li class="item"><a href="/index/research.html">RESEARCH</a></li>
         </ul>
@@ -49,7 +49,7 @@
 
         <!--Cards-->
         <h1 style='font-size:5rem; font-family: 
-        "arvo", sans-serif;'>Events</h1>
+        "arvo", sans-serif;' class="abt">Events</h1>
 
         <div class="container">
             <div class="card">
@@ -277,7 +277,7 @@
 
             <div class="card reveal">
                 <div class="content">
-                    <h3>Wev Dev Bootcamp</h3>
+                    <h3>Web Dev Bootcamp</h3>
                     <p>
                         The following topics were taught:<br><br>
                         Day 1 - HTML <br>
@@ -349,27 +349,28 @@
         </section>
 
 
- <!-- Scrolling effect-->
- <script type="text/javascript">
-    window.addEventListener('scroll', reveal);
+        <!-- Scrolling effect-->
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
 
-    function reveal() {
-      var reveals = document.querySelectorAll('.reveal');
+            function reveal() {
+                var reveals = document.querySelectorAll('.reveal');
 
-      for (var i = 0; i < reveals.length; i++) {
+                for (var i = 0; i < reveals.length; i++) {
 
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
 
-        if (revealtop < windowheight - revealpoint) {
-          reveals[i].classList.add('active');
-        }
-        else {
-          reveals[i].classList.remove('active');
-        }
-      }
-    }
-  </script>
-</body>       
+                    if (revealtop < windowheight - revealpoint) {
+                        reveals[i].classList.add('active');
+                    }
+                    else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
+</body>
+
 </html>

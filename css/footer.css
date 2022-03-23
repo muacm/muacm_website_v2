@@ -43,7 +43,7 @@
   /* margin-left: 35px; */
   width: 151px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #e91e63;
+  border-bottom: 2px solid #FFC14F;
   font-weight: 500;
   position: relative;
   /* left:26%; */
@@ -148,7 +148,7 @@
     margin: auto;
   }
   .footer-col .social-links {
-    margin-left: -105px;
+    margin-left: -40px;
   }
   .footer-col {
     width: 300px;
