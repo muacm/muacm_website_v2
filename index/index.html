@@ -642,11 +642,30 @@
     }
   </script>
   <script type="text/javascript">
+    <!-- counter -->
+    const counter_rev = () =>{
+      const counters = document.querySelectorAll(".counter");
+      counters.forEach((counter) => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = `${Math.ceil(count + increment)}`;
+          setTimeout(updateCounter, 1);
+        } else counter.innerText = target;
+      };
+      updateCounter();
+    });
+    }
+    counter_rev();
+
     window.addEventListener('scroll', reveal);
 
     function reveal() {
       var reveals = document.querySelectorAll('.reveal3');
-
+      counter_rev();
       for (var i = 0; i < reveals.length; i++) {
 
         var windowheight = window.innerHeight;
@@ -661,24 +680,6 @@
         }
       }
     }
-  </script>
-
-  <!-- counter -->
-  <script>
-    const counters = document.querySelectorAll(".counter");
-    counters.forEach((counter) => {
-      counter.innerText = "0";
-      const updateCounter = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-        const increment = target / 200;
-        if (count < target) {
-          counter.innerText = `${Math.ceil(count + increment)}`;
-          setTimeout(updateCounter, 1);
-        } else counter.innerText = target;
-      };
-      updateCounter();
-    });
   </script>
 
   <!--ChatBot -->
